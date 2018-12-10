@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><meta name="generator" content="Hexo 3.8.0">
+<head>
+    <meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
 
     <title>阅读 | 书源编写 </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
 
     <!-- fonts -->
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
@@ -19,160 +19,62 @@
     <!-- favicon -->
     <link rel="icon" href="/images/favicon.ico">
 
-    
 
-  </head>
-  <body>
+</head>
+<body>
 
-   <script>window.__INITIAL_STATE__ = {"page":{"title":"书源编写","path":"index.html"},"data":{"navigation":{"logo":{"text":"阅读","type":"link","path":"MyBookshelf/sourcerule.html"},"main":[{"text":"书源编写","type":"link","path":"MyBookshelf/sourcerule.html"}]}},"config":{"timezone":null,"root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+<script>
+    window.__INITIAL_STATE__ = {"page":{"title":"书源编写","path":"index.html"},"data":{"navigation":{"logo":{"text":"阅读","type":"link","path":"MyBookshelf/sourcerule.html"},"main":[{"text":"书源编写","type":"link","path":"MyBookshelf/sourcerule.html"}]}},"config":{"timezone":null,"root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}
+</script>
 
-    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot=""><nav class="doc-navbar"><a href="/MyBookshelf/sourcerule.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">阅读</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
-    <div class="doc-content">
-  <div class="dc-page">
-    <div class="dc-card">
-      <div id="react-search-results-root"></div>
-      <div id="page-content" class="doc-formatting">
-        <h1 id="书源制作教程"><a href="#书源制作教程" class="headerlink" title="书源制作教程"></a>书源制作教程</h1><ul>
-<li><a href="https://www.hostfans.cn/make-course" target="_blank" rel="noopener">https://www.hostfans.cn/make-course</a></li>
-</ul>
-<h1 id="从2-18-120813开始增加了新的规则写法"><a href="#从2-18-120813开始增加了新的规则写法" class="headerlink" title="从2.18.120813开始增加了新的规则写法"></a>从2.18.120813开始增加了新的规则写法</h1><ul>
-<li>支持XPath语法,以@XPath:开头,语法见 <a href="http://www.w3school.com.cn/xpath/index.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/xpath/index.asp</a></li>
-<li>XPath语法测试 <a href="http://www.bejson.com/testtools/xpath/" target="_blank" rel="noopener">http://www.bejson.com/testtools/xpath/</a> 写书源时可用</li>
-<li>支持JSonPath语法,以@JSon:开头,语法见 <a href="https://blog.csdn.net/koflance/article/details/63262484" target="_blank" rel="noopener">https://blog.csdn.net/koflance/article/details/63262484</a></li>
-<li>JSonPath语法测试 <a href="http://jsonpath.herokuapp.com" target="_blank" rel="noopener">http://jsonpath.herokuapp.com</a> 写书源时可用</li>
-<li>支持用js处理结果,以@js:开头,结果变量为result 如 “@JSon:$.link@js:”<a href="http://chapterup.zhuishushenqi.com/chapter/&quot;" target="_blank" rel="noopener">http://chapterup.zhuishushenqi.com/chapter/&quot;</a> + encodeURIComponent(result)”</li>
-<li><strong>注意</strong> JSon的值如果不是String,用js处理时需自己进行类型转换</li>
-<li><strong>注意</strong> #替换规则在新语法下无法使用,新的语法用js处理结果,原有的规则不变,见下方</li>
-</ul>
-<h1 id="书源规则说明"><a href="#书源规则说明" class="headerlink" title="书源规则说明"></a>书源规则说明</h1><ul>
-<li>书源规则基于HTML标记,如class,id,tag等</li>
-<li>想要写规则先要打开网页源代码,在里面找到想要获取内容对应的标签,</li>
-<li>Chrome可以在网页上右击点击检查可以方便的查看标签</li>
-</ul>
-<h2 id="基本写法"><a href="#基本写法" class="headerlink" title="基本写法"></a>基本写法</h2><ul>
-<li>@为分隔符,用来分隔获取规则</li>
-<li>每段规则可分为3段</li>
-<li>第一段是类型,如class,id,tag等, children获取所有子标签,不需要第二段和第三段</li>
-<li>第二段是名称,</li>
-<li>第三段是位置,class,tag会获取到多个,所以要加位置,id类型不要加</li>
-<li>如不加位置会获取所有</li>
-<li>位置正数从0开始,0是第一个</li>
-<li>如为负数则是取倒数的值,-1为最倒数第一个,-2为倒数第二个</li>
-<li>!是排除,有些位置不符合需要排除用!,后面的序号用:隔开0是第1个,负数为倒数序号,-1最后一个,-2倒数第2个,依次</li>
-<li>@的最后一段为获取内容,如text,textNodes,href,src,html等</li>
-<li>如果有不同网页的规则可以用 | 或 &amp; 分隔 或 %</li>
-<li>|会以第一个取到值的为准,</li>
-<li>&amp; 会合并所有规则取到的值,</li>
-<li>% 会依次取数,如三个列表,先取列表1的第一个,再取列表2的第一个,再取列表3的第一个,再取列表1的第2个…….</li>
-<li>如需要正则替换在最后加上 #正则表达式#替换为</li>
-<li>例:<a href="mailto:class.odd.0@tag.a.0" target="_blank" rel="noopener">class.odd.0@tag.a.0</a>@<a href="mailto:text|tag.dd.0@tag.h1" target="_blank" rel="noopener">text|tag.dd.0@tag.h1</a>@text#全文阅读</li>
-<li>例:<a href="mailto:class.odd.0@tag.a.0" target="_blank" rel="noopener">class.odd.0@tag.a.0</a>@<a href="mailto:text&amp;tag.dd.0@tag.h1" target="_blank" rel="noopener">text&amp;tag.dd.0@tag.h1</a>@text#全文阅读</li>
-</ul>
-<h3 id="BookSourceUrl-书源网址"><a href="#BookSourceUrl-书源网址" class="headerlink" title="BookSourceUrl 书源网址"></a>BookSourceUrl 书源网址</h3><h3 id="BookSourceName-书源名称"><a href="#BookSourceName-书源名称" class="headerlink" title="BookSourceName 书源名称"></a>BookSourceName 书源名称</h3><h3 id="BookSourceGroup-书源分组"><a href="#BookSourceGroup-书源分组" class="headerlink" title="BookSourceGroup 书源分组"></a>BookSourceGroup 书源分组</h3><h3 id="RuleSearchUrl-搜索网址"><a href="#RuleSearchUrl-搜索网址" class="headerlink" title="RuleSearchUrl 搜索网址"></a>RuleSearchUrl 搜索网址</h3><ul>
-<li>例:<a href="http://www.gxwztv.com/search.htm?keyword=searchKey&amp;pn=searchPage-1" target="_blank" rel="noopener">http://www.gxwztv.com/search.htm?keyword=searchKey&amp;pn=searchPage-1</a></li>
-<li>?为get @为post</li>
-<li>searchKey为关键字标识,运行时会替换为搜索关键字,</li>
-<li>searchPage,searchPage-1为搜索页数,从0开始的用searchPage-1,</li>
-<li>page规则还可以写成{index（第一页）, indexSecond（第二页）, indexThird（第三页）, index-searchPage+1 或 index-searchPage-1 或 index-searchPage}</li>
-<li>要添加转码编码在最后加 |char=gbk</li>
-<li>|char=escape 会模拟js escape方法进行编码</li>
-</ul>
-<h4 id="ruleFindUrl-发现规则"><a href="#ruleFindUrl-发现规则" class="headerlink" title="ruleFindUrl 发现规则"></a>ruleFindUrl 发现规则</h4><ul>
-<li>发现规则分为两段,名称和url用::分开,如</li>
-<li>起点风云榜::<a href="https://www.qidian.com/rank/yuepiao?page=searchPage" target="_blank" rel="noopener">https://www.qidian.com/rank/yuepiao?page=searchPage</a></li>
-<li>url规则和搜索规则一样,多个规则用&amp;&amp;或换行分开,如</li>
-<li>起点风云榜::<a href="https://www.qidian.com/rank/yuepiao?page=searchPage&amp;&amp;原创风云榜::https://www.qidian.com/rank/yuepiao?style=1&amp;page=searchPage" target="_blank" rel="noopener">https://www.qidian.com/rank/yuepiao?page=searchPage&amp;&amp;原创风云榜::https://www.qidian.com/rank/yuepiao?style=1&amp;page=searchPage</a></li>
-<li>也可以每行写一个,域名可以省略,如省略会调用书源域名</li>
-</ul>
-<p>起点风云榜::/rank/yuepiao?page=searchPage</p>
-<p>原创风云榜::/rank/yuepiao?style=1&amp;page=searchPage</p>
-<h4 id="RuleSearchList-搜索列表"><a href="#RuleSearchList-搜索列表" class="headerlink" title="RuleSearchList 搜索列表"></a>RuleSearchList 搜索列表</h4><ul>
-<li>例:class.list-group-item!0:%</li>
-</ul>
-<h4 id="RuleSearchAuthor-搜索里的作者"><a href="#RuleSearchAuthor-搜索里的作者" class="headerlink" title="RuleSearchAuthor 搜索里的作者"></a>RuleSearchAuthor 搜索里的作者</h4><ul>
-<li>例:class.col-xs-2.0@text</li>
-</ul>
-<h4 id="RuleSearchKind-搜索里的类型"><a href="#RuleSearchKind-搜索里的类型" class="headerlink" title="RuleSearchKind 搜索里的类型"></a>RuleSearchKind 搜索里的类型</h4><ul>
-<li>例:class.col-xs-1.0@text</li>
-</ul>
-<h4 id="RuleSearchLastChapter-搜索里的最新章节"><a href="#RuleSearchLastChapter-搜索里的最新章节" class="headerlink" title="RuleSearchLastChapter 搜索里的最新章节"></a>RuleSearchLastChapter 搜索里的最新章节</h4><ul>
-<li>例:<a href="mailto:class.col-xs-4.0@tag.a.0" target="_blank" rel="noopener">class.col-xs-4.0@tag.a.0</a>@text</li>
-</ul>
-<h4 id="RuleSearchName-获取搜索里的书名"><a href="#RuleSearchName-获取搜索里的书名" class="headerlink" title="RuleSearchName 获取搜索里的书名"></a>RuleSearchName 获取搜索里的书名</h4><ul>
-<li>例:<a href="mailto:class.col-xs-3.0@tag.a.0" target="_blank" rel="noopener">class.col-xs-3.0@tag.a.0</a>@text</li>
-</ul>
-<h4 id="RuleSearchNoteUrl-搜索里的书链接"><a href="#RuleSearchNoteUrl-搜索里的书链接" class="headerlink" title="RuleSearchNoteUrl 搜索里的书链接"></a>RuleSearchNoteUrl 搜索里的书链接</h4><ul>
-<li>例:<a href="mailto:class.col-xs-3.0@tag.a.0" target="_blank" rel="noopener">class.col-xs-3.0@tag.a.0</a>@href</li>
-</ul>
-<h4 id="RuleSearchCoverUrl-搜索里的书封面"><a href="#RuleSearchCoverUrl-搜索里的书封面" class="headerlink" title="RuleSearchCoverUrl 搜索里的书封面"></a>RuleSearchCoverUrl 搜索里的书封面</h4><ul>
-<li>例:tag.img.0@src</li>
-</ul>
-<h4 id="RuleBookUrlPattern-书籍页面里的URL正则"><a href="#RuleBookUrlPattern-书籍页面里的URL正则" class="headerlink" title="RuleBookUrlPattern 书籍页面里的URL正则"></a>RuleBookUrlPattern 书籍页面里的URL正则</h4><ul>
-<li>例:https?://<a href="http://www.piaotian.com/bookinfo/.*&quot;" target="_blank" rel="noopener">www.piaotian.com/bookinfo/.*&quot;</a></li>
-</ul>
-<h4 id="RuleBookName-书籍页面里的书名称"><a href="#RuleBookName-书籍页面里的书名称" class="headerlink" title="RuleBookName 书籍页面里的书名称"></a>RuleBookName 书籍页面里的书名称</h4><ul>
-<li>例:class.active.0@text</li>
-</ul>
-<h4 id="RuleBookAuthor-书籍页面里的作者"><a href="#RuleBookAuthor-书籍页面里的作者" class="headerlink" title="RuleBookAuthor 书籍页面里的作者"></a>RuleBookAuthor 书籍页面里的作者</h4><ul>
-<li>例:<a href="mailto:class.col-xs-12.0@tag.small.0" target="_blank" rel="noopener">class.col-xs-12.0@tag.small.0</a>@text</li>
-</ul>
-<h4 id="RuleIntroduce-书籍页面里的简介"><a href="#RuleIntroduce-书籍页面里的简介" class="headerlink" title="RuleIntroduce 书籍页面里的简介"></a>RuleIntroduce 书籍页面里的简介</h4><ul>
-<li>例:class.panel panel-default <a href="mailto:mt20.0@id.shot" target="_blank" rel="noopener">mt20.0@id.shot</a>@text</li>
-</ul>
-<h4 id="RuleCoverUrl-书籍页面里的封面"><a href="#RuleCoverUrl-书籍页面里的封面" class="headerlink" title="RuleCoverUrl 书籍页面里的封面"></a>RuleCoverUrl 书籍页面里的封面</h4><ul>
-<li>例:<a href="mailto:class.panel-body.0@class.img-thumbnail.0" target="_blank" rel="noopener">class.panel-body.0@class.img-thumbnail.0</a>@src</li>
-</ul>
-<h4 id="RuleBookKind-书籍页面里的分类"><a href="#RuleBookKind-书籍页面里的分类" class="headerlink" title="RuleBookKind 书籍页面里的分类"></a>RuleBookKind 书籍页面里的分类</h4><ul>
-<li>例:<a href="mailto:id.centerm@tag.td.3" target="_blank" rel="noopener">id.centerm@tag.td.3</a>@text#.*：</li>
-</ul>
-<h4 id="RuleBookLastChapter-书籍页面里的最新章节"><a href="#RuleBookLastChapter-书籍页面里的最新章节" class="headerlink" title="RuleBookLastChapter 书籍页面里的最新章节"></a>RuleBookLastChapter 书籍页面里的最新章节</h4><ul>
-<li>例<a href="mailto:class.grid.0@tag.td.0" target="_blank" rel="noopener">class.grid.0@tag.td.0</a>@tag.a@text</li>
-</ul>
-<h4 id="RuleChapterUrl-书籍页面里的目录地址"><a href="#RuleChapterUrl-书籍页面里的目录地址" class="headerlink" title="RuleChapterUrl 书籍页面里的目录地址"></a>RuleChapterUrl 书籍页面里的目录地址</h4><ul>
-<li>如果目录地址和书籍地址一样则留空</li>
-<li>例:class.list-group-item <a href="mailto:tac.0@tag.a.0" target="_blank" rel="noopener">tac.0@tag.a.0</a>@href</li>
-</ul>
-<h4 id="RuleChapterUrlNext-目录页面里的下一页目录地址"><a href="#RuleChapterUrlNext-目录页面里的下一页目录地址" class="headerlink" title="RuleChapterUrlNext 目录页面里的下一页目录地址"></a>RuleChapterUrlNext 目录页面里的下一页目录地址</h4><ul>
-<li>如果没有下一页则留空</li>
-<li>例:class.page.0@text.下一页.0@href<br><strong>也可以获取所有目录页url的列表,会依次获取</strong></li>
-<li>例:<a href="mailto:class.chapter.0@tag.a" target="_blank" rel="noopener">class.chapter.0@tag.a</a>@href  (class.chapter.0)里包含第1页第2页第三页等</li>
-</ul>
-<h4 id="RuleChapterList-目录页面的目录列表"><a href="#RuleChapterList-目录页面的目录列表" class="headerlink" title="RuleChapterList 目录页面的目录列表"></a>RuleChapterList 目录页面的目录列表</h4><ul>
-<li>前面加 - 号倒序排列</li>
-<li>例:<a href="mailto:id.chapters-list@tag.a" target="_blank" rel="noopener">id.chapters-list@tag.a</a></li>
-<li>例:<a href="mailto:-id.chapters-list@tag.a" target="_blank" rel="noopener">-id.chapters-list@tag.a</a></li>
-</ul>
-<h4 id="RuleChapterName-目录列表的章节名称"><a href="#RuleChapterName-目录列表的章节名称" class="headerlink" title="RuleChapterName 目录列表的章节名称"></a>RuleChapterName 目录列表的章节名称</h4><ul>
-<li>例:text</li>
-</ul>
-<h4 id="RuleContentUrl-目录列表的章节链接"><a href="#RuleContentUrl-目录列表的章节链接" class="headerlink" title="RuleContentUrl 目录列表的章节链接"></a>RuleContentUrl 目录列表的章节链接</h4><ul>
-<li>例:href</li>
-</ul>
-<h4 id="RuleBookContent-章节内容"><a href="#RuleBookContent-章节内容" class="headerlink" title="RuleBookContent 章节内容"></a>RuleBookContent 章节内容</h4><ul>
-<li>例:id.txtContent@textNodes</li>
-<li>如需获取AJAX动态内容前面加$</li>
-<li>例:$id.txtContent@textNodes</li>
-</ul>
-
-        <div id="react-support-footer-root"></div>
-      </div>
+<div id="react-navigation-root">
+    <div class="doc-navigation" data-reactroot="">
+        <nav class="doc-navbar"><a href="/MyBookshelf/sourcerule.html" class="doc-navbar__logo"><img
+                src="/images/logo.png" class="doc-navbar__logo__img"><span
+                class="doc-navbar__logo__text">阅读</span></a><i
+                class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i
+                class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i>
+        </nav>
+        <nav class="doc-sidebar">
+            <div class="doc-sidebar__vertical-menu"><i
+                    class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i
+                    class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i>
+            </div>
+            <div class="doc-sidebar-content">
+                <div class="doc-sidebar__search-form"></div>
+                <ul class="doc-sidebar-list"></ul>
+            </div>
+        </nav>
     </div>
-  </div>
+</div>
+<div class="doc-content">
+    <div class="dc-page">
+        <div class="dc-card">
+            <div id="react-search-results-root"></div>
+            <div id="page-content" class="doc-formatting">
+                <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                <script>
+    $.get("sourcerule.md", function(response, status, xhr){
+        $("#page-content").html(marked(response));
+    });
+
+                </script>
+
+                <div id="react-support-footer-root"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
-    
+
+<!-- js vendors -->
+<script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+<!-- js source  -->
+<script src="/script/doc.js"></script>
 
 
-    
-
-    <!-- js vendors -->
-    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
-
-    <!-- js source  -->
-    <script src="/script/doc.js"></script>
-
-    
-
-  </body>
+</body>
 </html>
