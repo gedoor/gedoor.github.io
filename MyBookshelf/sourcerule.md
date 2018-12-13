@@ -1,5 +1,6 @@
 # 书源制作教程
 - https://www.hostfans.cn/make-course
+- https://www.52pojie.cn/thread-758541-1-1.html
 
 # 从2.18.120813开始增加了新的规则写法
 - 支持XPath语法,以@XPath:开头,语法见 http://www.w3school.com.cn/xpath/index.asp
