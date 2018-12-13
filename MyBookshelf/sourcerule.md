@@ -8,7 +8,8 @@
 - JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
 - 支持用js处理结果,以@js:开头,结果变量为result 如 "@JSon:$.link@js:"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"
 - **注意** JSon的值如果不是String,用js处理时需自己进行类型转换
-- **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,原有的规则不变,见下方
+- **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,
+- 原有的规则不变,见下方
 
 # 书源规则说明
 - 书源规则基于HTML标记,如class,id,tag等
