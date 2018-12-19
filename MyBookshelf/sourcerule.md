@@ -6,6 +6,7 @@
 - 支持XPath语法,以@XPath:开头,语法见 http://www.w3school.com.cn/xpath/index.asp
 - XPath语法测试 http://www.bejson.com/testtools/xpath/ 写书源时可用
 - 支持JSonPath语法,以@JSon:开头,语法见 https://blog.csdn.net/koflance/article/details/63262484
+- JsonPath获取字符支持此种写法xxx{$._id}yyy{$.chapter}zzz
 - JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
 - 支持用js处理结果,以@js:开头,结果变量为result 如 "@JSon:$.link@js:"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"
 - **注意** JSon的值如果不是String,用js处理时需自己进行类型转换
