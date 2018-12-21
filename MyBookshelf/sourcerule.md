@@ -1,14 +1,17 @@
 # 书源制作教程
 - https://www.hostfans.cn/make-course
+- https://www.52pojie.cn/thread-758541-1-1.html
 
 # 从2.18.120813开始增加了新的规则写法
 - 支持XPath语法,以@XPath:开头,语法见 http://www.w3school.com.cn/xpath/index.asp
 - XPath语法测试 http://www.bejson.com/testtools/xpath/ 写书源时可用
 - 支持JSonPath语法,以@JSon:开头,语法见 https://blog.csdn.net/koflance/article/details/63262484
+- JsonPath获取字符支持此种写法xxx{$._id}yyy{$.chapter}zzz
 - JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
 - 支持用js处理结果,以@js:开头,结果变量为result 如 "@JSon:$.link@js:"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"
 - **注意** JSon的值如果不是String,用js处理时需自己进行类型转换
-- **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,原有的规则不变,见下方
+- **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,
+- 原有的规则不变,见下方
 
 # 书源规则说明
 - 书源规则基于HTML标记,如class,id,tag等
@@ -18,13 +21,13 @@
 ## 基本写法
 - @为分隔符,用来分隔获取规则
 - 每段规则可分为3段
-- 第一段是类型,如class,id,tag等, children获取所有子标签,不需要第二段和第三段
-- 第二段是名称,
+- 第一段是类型,如class,id,tag,text,children等, children获取所有子标签,不需要第二段和第三段,text可以根据文本内容获取
+- 第二段是名称,text. 第二段为文本内容的一部分
 - 第三段是位置,class,tag会获取到多个,所以要加位置,id类型不要加
 - 如不加位置会获取所有
-- 位置正数从0开始,0是第一个
-- 如为负数则是取倒数的值,-1为最倒数第一个,-2为倒数第二个
+- 位置正数从0开始,0是第一个,如为负数则是取倒数的值,-1为最倒数第一个,-2为倒数第二个
 - !是排除,有些位置不符合需要排除用!,后面的序号用:隔开0是第1个,负数为倒数序号,-1最后一个,-2倒数第2个,依次
+- 获取列表的最前面加上负号- 可以使列表倒置,有些网站目录列表是倒的,前面加个负号可变为正的
 - @的最后一段为获取内容,如text,textNodes,href,src,html等
 - 如果有不同网页的规则可以用 | 或 & 分隔 或 %
 - |会以第一个取到值的为准,
