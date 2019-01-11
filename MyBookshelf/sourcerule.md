@@ -1,16 +1,23 @@
-# 书源制作教程
+## 第三方书源制作教程
 - https://www.hostfans.cn/make-course
 - https://www.52pojie.cn/thread-758541-1-1.html
 
 # 从2.18.120813开始增加了新的规则写法
+```
 - 支持XPath语法,以@XPath:开头,语法见 http://www.w3school.com.cn/xpath/index.asp
 - XPath语法测试 http://www.bejson.com/testtools/xpath/ 写书源时可用
 - 支持JSonPath语法,以@JSon:开头,语法见 https://blog.csdn.net/koflance/article/details/63262484
 - JsonPath获取字符支持此种写法xxx{$._id}yyy{$.chapter}zzz
 - JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
-- 支持用js处理结果,以@js:开头,结果变量为result 如 "@JSon:$.link@js:"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"
+- 支持用js处理结果,以@js:开头,结果变量为result,网址变量为bastPath
+  如 "@JSon:$.link@js:"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"
 - **注意** JSon的值如果不是String,用js处理时需自己进行类型转换
 - **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,
+- 可以用@put:{key:rule, key:ruel}保存变量其它地方使用,key为变量名, rule为完整的规则
+- 可以用@get:{key}获取变量,key为变量名
+- 解析规则时会先@put变量,然后,@get变量,替换@get:{key}
+- 可以使用@Header:{key:value,key:value}定义访问头,添加在Url规则头部,获尾部
+```
 - 原有的规则不变,见下方
 
 # 书源规则说明
@@ -19,6 +26,7 @@
 - Chrome可以在网页上右击点击检查可以方便的查看标签
 
 ## 基本写法
+```
 - @为分隔符,用来分隔获取规则
 - 每段规则可分为3段
 - 第一段是类型,如class,id,tag,text,children等, children获取所有子标签,不需要第二段和第三段,text可以根据文本内容获取
@@ -36,11 +44,13 @@
 - 如需要正则替换在最后加上 #正则表达式#替换为
 - 例:class.odd.0@tag.a.0@text|tag.dd.0@tag.h1@text#全文阅读
 - 例:class.odd.0@tag.a.0@text&tag.dd.0@tag.h1@text#全文阅读
+```
 
 ### BookSourceUrl 书源网址
 ### BookSourceName 书源名称
 ### BookSourceGroup 书源分组
 ### RuleSearchUrl 搜索网址
+```
 - 例:http://www.gxwztv.com/search.htm?keyword=searchKey&pn=searchPage-1
 - ?为get @为post
 - searchKey为关键字标识,运行时会替换为搜索关键字,
@@ -48,82 +58,123 @@
 - page规则还可以写成{index（第一页）, indexSecond（第二页）, indexThird（第三页）, index-searchPage+1 或 index-searchPage-1 或 index-searchPage}
 - 要添加转码编码在最后加 |char=gbk
 - |char=escape 会模拟js escape方法进行编码
+```
 
 #### ruleFindUrl 发现规则
+```
 - 发现规则分为两段,名称和url用::分开,如
 - 起点风云榜::https://www.qidian.com/rank/yuepiao?page=searchPage
 - url规则和搜索规则一样,多个规则用&&或换行分开,如
 - 起点风云榜::https://www.qidian.com/rank/yuepiao?page=searchPage&&原创风云榜::https://www.qidian.com/rank/yuepiao?style=1&page=searchPage
 - 也可以每行写一个,域名可以省略,如省略会调用书源域名
-
 起点风云榜::/rank/yuepiao?page=searchPage
-
 原创风云榜::/rank/yuepiao?style=1&page=searchPage
+```
 
 #### RuleSearchList 搜索列表
+```
 - 例:class.list-group-item!0:%
+```
 
 #### RuleSearchAuthor 搜索里的作者
+```
 - 例:class.col-xs-2.0@text
+```
 
 #### RuleSearchKind 搜索里的类型
+```
 - 例:class.col-xs-1.0@text
+```
 
 #### RuleSearchLastChapter 搜索里的最新章节
+```
 - 例:class.col-xs-4.0@tag.a.0@text
+```
 
 #### RuleSearchName 获取搜索里的书名
+```
 - 例:class.col-xs-3.0@tag.a.0@text
+```
 
 #### RuleSearchNoteUrl 搜索里的书链接
+```
 - 例:class.col-xs-3.0@tag.a.0@href
+```
 
 #### RuleSearchCoverUrl 搜索里的书封面
+```
 - 例:tag.img.0@src
+```
 
 #### RuleBookUrlPattern 书籍页面里的URL正则
+```
 - 例:https?://www.piaotian.com/bookinfo/.*"
+```
 
 #### RuleBookName 书籍页面里的书名称
+```
 - 例:class.active.0@text
+```
 
 #### RuleBookAuthor 书籍页面里的作者
+```
 - 例:class.col-xs-12.0@tag.small.0@text
+```
 
 #### RuleIntroduce 书籍页面里的简介
+```
 - 例:class.panel panel-default mt20.0@id.shot@text
+```
 
 #### RuleCoverUrl 书籍页面里的封面
+```
 - 例:class.panel-body.0@class.img-thumbnail.0@src
+```
 
 #### RuleBookKind 书籍页面里的分类
+```
 - 例:id.centerm@tag.td.3@text#.*：
+```
 
 #### RuleBookLastChapter 书籍页面里的最新章节
+```
 - 例class.grid.0@tag.td.0@tag.a@text
+```
 
 #### RuleChapterUrl 书籍页面里的目录地址
+```
 - 如果目录地址和书籍地址一样则留空
 - 例:class.list-group-item tac.0@tag.a.0@href
+```
 
 #### RuleChapterUrlNext 目录页面里的下一页目录地址
+```
 - 如果没有下一页则留空
 - 例:class.page.0@text.下一页.0@href
 **也可以获取所有目录页url的列表,会依次获取**
 - 例:class.chapter.0@tag.a@href  (class.chapter.0)里包含第1页第2页第三页等
+```
 
 #### RuleChapterList 目录页面的目录列表
+```
 - 前面加 - 号倒序排列
 - 例:id.chapters-list@tag.a
 - 例:-id.chapters-list@tag.a
+```
 
 #### RuleChapterName 目录列表的章节名称
+```
 - 例:text
+```
 
 #### RuleContentUrl 目录列表的章节链接
+```
 - 例:href
+```
 
 #### RuleBookContent 章节内容
+```
 - 例:id.txtContent@textNodes
 - 如需获取AJAX动态内容前面加$
 - 例:$id.txtContent@textNodes
+```
