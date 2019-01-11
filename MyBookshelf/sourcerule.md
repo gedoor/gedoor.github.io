@@ -17,6 +17,7 @@
 - 可以用@get:{key}获取变量,key为变量名
 - 解析规则时会先@put变量,然后,@get变量,替换@get:{key}
 - 可以使用@Header:{key:value,key:value}定义访问头,添加在Url规则头部,获尾部
+- 除去封面地址,其它地址都支持搜索地址的表达方式
 ```
 - 原有的规则不变,见下方
 
@@ -51,11 +52,15 @@
 ### BookSourceGroup 书源分组
 ### RuleSearchUrl 搜索网址
 ```
-- 例:http://www.gxwztv.com/search.htm?keyword=searchKey&pn=searchPage-1
+例:http://www.gxwztv.com/search.htm?keyword=searchKey&pn=searchPage-1
 - ?为get @为post
 - searchKey为关键字标识,运行时会替换为搜索关键字,
 - searchPage,searchPage-1为搜索页数,从0开始的用searchPage-1,
-- page规则还可以写成{index（第一页）, indexSecond（第二页）, indexThird（第三页）, index-searchPage+1 或 index-searchPage-1 或 index-searchPage}
+- page规则还可以写成
+{index（第一页）, 
+indexSecond（第二页）, 
+indexThird（第三页）, 
+index-searchPage+1 或 index-searchPage-1 或 index-searchPage}
 - 要添加转码编码在最后加 |char=gbk
 - |char=escape 会模拟js escape方法进行编码
 ```
@@ -65,7 +70,8 @@
 - 发现规则分为两段,名称和url用::分开,如
 - 起点风云榜::https://www.qidian.com/rank/yuepiao?page=searchPage
 - url规则和搜索规则一样,多个规则用&&或换行分开,如
-起点风云榜::https://www.qidian.com/rank/yuepiao?page=searchPage&&原创风云榜::https://www.qidian.com/rank/yuepiao?style=1&page=searchPage
+起点风云榜::https://www.qidian.com/rank/yuepiao?page=searchPage
+&&原创风云榜::https://www.qidian.com/rank/yuepiao?style=1&page=searchPage
 - 也可以每行写一个,域名可以省略,如省略会调用书源域名
 起点风云榜::/rank/yuepiao?page=searchPage
 原创风云榜::/rank/yuepiao?style=1&page=searchPage
@@ -157,7 +163,7 @@
 
 #### RuleChapterList 目录页面的目录列表
 ```
-- 前面加 - 号倒序排列
+列表规则前面加 - 号则可以将列表倒序排列
 例:id.chapters-list@tag.a
 例:-id.chapters-list@tag.a
 ```
