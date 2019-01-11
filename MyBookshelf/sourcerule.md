@@ -65,7 +65,7 @@
 - 发现规则分为两段,名称和url用::分开,如
 - 起点风云榜::https://www.qidian.com/rank/yuepiao?page=searchPage
 - url规则和搜索规则一样,多个规则用&&或换行分开,如
-- 起点风云榜::https://www.qidian.com/rank/yuepiao?page=searchPage&&原创风云榜::https://www.qidian.com/rank/yuepiao?style=1&page=searchPage
+起点风云榜::https://www.qidian.com/rank/yuepiao?page=searchPage&&原创风云榜::https://www.qidian.com/rank/yuepiao?style=1&page=searchPage
 - 也可以每行写一个,域名可以省略,如省略会调用书源域名
 起点风云榜::/rank/yuepiao?page=searchPage
 原创风云榜::/rank/yuepiao?style=1&page=searchPage
@@ -73,108 +73,108 @@
 
 #### RuleSearchList 搜索列表
 ```
-- 例:class.list-group-item!0:%
+例:class.list-group-item!0:%
 ```
 
 #### RuleSearchAuthor 搜索里的作者
 ```
-- 例:class.col-xs-2.0@text
+例:class.col-xs-2.0@text
 ```
 
 #### RuleSearchKind 搜索里的类型
 ```
-- 例:class.col-xs-1.0@text
+例:class.col-xs-1.0@text
 ```
 
 #### RuleSearchLastChapter 搜索里的最新章节
 ```
-- 例:class.col-xs-4.0@tag.a.0@text
+例:class.col-xs-4.0@tag.a.0@text
 ```
 
 #### RuleSearchName 获取搜索里的书名
 ```
-- 例:class.col-xs-3.0@tag.a.0@text
+例:class.col-xs-3.0@tag.a.0@text
 ```
 
 #### RuleSearchNoteUrl 搜索里的书链接
 ```
-- 例:class.col-xs-3.0@tag.a.0@href
+例:class.col-xs-3.0@tag.a.0@href
 ```
 
 #### RuleSearchCoverUrl 搜索里的书封面
 ```
-- 例:tag.img.0@src
+例:tag.img.0@src
 ```
 
 #### RuleBookUrlPattern 书籍页面里的URL正则
 ```
-- 例:https?://www.piaotian.com/bookinfo/.*"
+例:https?://www.piaotian.com/bookinfo/.*"
 ```
 
 #### RuleBookName 书籍页面里的书名称
 ```
-- 例:class.active.0@text
+例:class.active.0@text
 ```
 
 #### RuleBookAuthor 书籍页面里的作者
 ```
-- 例:class.col-xs-12.0@tag.small.0@text
+例:class.col-xs-12.0@tag.small.0@text
 ```
 
 #### RuleIntroduce 书籍页面里的简介
 ```
-- 例:class.panel panel-default mt20.0@id.shot@text
+例:class.panel panel-default mt20.0@id.shot@text
 ```
 
 #### RuleCoverUrl 书籍页面里的封面
 ```
-- 例:class.panel-body.0@class.img-thumbnail.0@src
+例:class.panel-body.0@class.img-thumbnail.0@src
 ```
 
 #### RuleBookKind 书籍页面里的分类
 ```
-- 例:id.centerm@tag.td.3@text#.*：
+例:id.centerm@tag.td.3@text#.*：
 ```
 
 #### RuleBookLastChapter 书籍页面里的最新章节
 ```
-- 例class.grid.0@tag.td.0@tag.a@text
+例class.grid.0@tag.td.0@tag.a@text
 ```
 
 #### RuleChapterUrl 书籍页面里的目录地址
 ```
 - 如果目录地址和书籍地址一样则留空
-- 例:class.list-group-item tac.0@tag.a.0@href
+例:class.list-group-item tac.0@tag.a.0@href
 ```
 
 #### RuleChapterUrlNext 目录页面里的下一页目录地址
 ```
 - 如果没有下一页则留空
-- 例:class.page.0@text.下一页.0@href
+例:class.page.0@text.下一页.0@href
 **也可以获取所有目录页url的列表,会依次获取**
-- 例:class.chapter.0@tag.a@href  (class.chapter.0)里包含第1页第2页第三页等
+例:class.chapter.0@tag.a@href  (class.chapter.0)里包含第1页第2页第三页等
 ```
 
 #### RuleChapterList 目录页面的目录列表
 ```
 - 前面加 - 号倒序排列
-- 例:id.chapters-list@tag.a
-- 例:-id.chapters-list@tag.a
+例:id.chapters-list@tag.a
+例:-id.chapters-list@tag.a
 ```
 
 #### RuleChapterName 目录列表的章节名称
 ```
-- 例:text
+例:text
 ```
 
 #### RuleContentUrl 目录列表的章节链接
 ```
-- 例:href
+例:href
 ```
 
 #### RuleBookContent 章节内容
 ```
-- 例:id.txtContent@textNodes
+例:id.txtContent@textNodes
 - 如需获取AJAX动态内容前面加$
-- 例:$id.txtContent@textNodes
+例:$id.txtContent@textNodes
 ```
