@@ -16,7 +16,7 @@
 - 可以用@put:{key:rule, key:ruel}保存变量其它地方使用,key为变量名, rule为完整的规则
 - 可以用@get:{key}获取变量,key为变量名
 - 解析规则时会先@put变量,然后,@get变量,替换@get:{key}
-- 可以使用@Header:{key:value,key:value}定义访问头,添加在Url规则头部,获尾部
+- 可以使用@Header:{key:value,key:value}定义访问头,添加在Url规则头部,或尾部
 - 除去封面地址,其它地址都支持搜索地址的表达方式
 ```
 - 原有的规则不变,见下方
