@@ -11,7 +11,6 @@
 - JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
 - 支持用js处理结果,以@js:开头,结果变量为result,网址变量为bastPath
   如 "@JSon:$.link@js:"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"
-- **注意** JSon的值如果不是String,用js处理时需自己进行类型转换
 - **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,
 - 可以用@put:{key:rule, key:ruel}保存变量其它地方使用,key为变量名, rule为完整的规则
 - 可以用@get:{key}获取变量,key为变量名
