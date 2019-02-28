@@ -5,8 +5,7 @@
 # 从2.18.120813开始增加了新的规则写法
 ```
 - 支持jsoub select语法,以@css:开头,语法见http://www.open-open.com/jsoup/selector-syntax.htm
-- 支持XPath语法,以@XPath:开头,语法见 http://www.w3school.com.cn/xpath/index.asp
-- XPath库采用的这个库https://github.com/zhegexiaohuozi/JsoupXpath, 语法兼容方面请看自己查看
+- 支持XPath语法,采用的这个库https://github.com/zhegexiaohuozi/JsoupXpath, 语法兼容方面请看自己查看
 - 支持JSonPath语法,以@JSon:开头,语法见 https://blog.csdn.net/koflance/article/details/63262484
 - JsonPath获取字符支持此种写法xxx{$._id}yyy{$.chapter}zzz
 - JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
