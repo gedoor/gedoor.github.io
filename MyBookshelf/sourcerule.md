@@ -10,7 +10,8 @@
 - JsonPath获取字符支持此种写法xxx{$._id}yyy{$.chapter}zzz
 - JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
 - 支持用js处理结果,以<js>开头</js>结尾,结果变量为result,网址变量为bastPath,位置任意,按顺序执行
-  如 "@JSon:$.link@js:"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"
+  如 @JSon:$.link<js>"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"</js>
+  如 <js>result=result.replace(/[\\w\\W]*url:'(.*?)'[\\w\\W]*/,\"$1\");java.ajax(result)</js>class.panel-body content-body content-ext.0@html
 - **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,
 - 可以用@put:{key:rule, key:ruel}保存变量其它地方使用,key为变量名, rule为完整的规则
 - 可以用@get:{key}获取变量,key为变量名
