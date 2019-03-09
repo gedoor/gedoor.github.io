@@ -2,14 +2,14 @@
 - https://www.hostfans.cn/make-course
 - https://www.52pojie.cn/thread-758541-1-1.html
 
-# 从2.18.120813开始增加了新的规则写法
+# 从2.19.030815开始增加了新的规则写法
 ```
 - 支持jsoub select语法,以@css:开头,语法见http://www.open-open.com/jsoup/selector-syntax.htm
 - 支持XPath语法,采用的这个库https://github.com/zhegexiaohuozi/JsoupXpath, 语法兼容方面请看自己查看
 - 支持JSonPath语法,以@JSon:开头,语法见 https://blog.csdn.net/koflance/article/details/63262484
 - JsonPath获取字符支持此种写法xxx{$._id}yyy{$.chapter}zzz
 - JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
-- 支持用js处理结果,以@js:开头,结果变量为result,网址变量为bastPath
+- 支持用js处理结果,以<js>开头</js>结尾,结果变量为result,网址变量为bastPath,位置任意,按顺序执行
   如 "@JSon:$.link@js:"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"
 - **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,
 - 可以用@put:{key:rule, key:ruel}保存变量其它地方使用,key为变量名, rule为完整的规则
@@ -17,6 +17,7 @@
 - 解析规则时会先@put变量,然后,@get变量,替换@get:{key}
 - 可以使用@Header:{key:value,key:value}定义访问头,添加在Url规则头部,或尾部
 - 除去封面地址,其它地址都支持搜索地址的表达方式
+- 自定义js方法 java.ajax(url) java.base64Decoder()
 ```
 - 原有的规则不变,见下方
 
