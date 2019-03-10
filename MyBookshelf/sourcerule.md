@@ -186,4 +186,6 @@ index-searchPage+1 或 index-searchPage-1 或 index-searchPage}
 例:id.txtContent@textNodes
 - 如需获取AJAX动态内容前面加$
 例:$id.txtContent@textNodes
+通用规则: <js>result.match(/[\\w\\W]+(<div[\\w\\W]+?[\\u4E00-\\u9FA50，。]{50,}[\\w\\W]+?div>)/)[1]</js>//*
+原理: 匹配包含50个以上中文字符的div节点.
 ```
