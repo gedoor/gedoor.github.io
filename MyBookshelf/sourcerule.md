@@ -30,13 +30,8 @@ java.setContent(html)
 java.getStringList(rule)
 //输入规则获取文本
 java.getString(rule)
-//获取节点列表AnalyzeCollection
+//获取节点列表List<Object>
 java.getElements(ruleStr)
-//AnalyzeCollection方法
-public int size()
-public boolean hasNext()
-//设置下一个解析内容AnalyzeRule在js内变量为java
-public void next(AnalyzeRule analyzeRule)
 ```
 - 原有的规则不变,见下方
 
