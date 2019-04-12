@@ -19,7 +19,24 @@
 - 解析规则时会先@put变量,然后,@get变量,替换@get:{key}
 - 可以使用@Header:{key:value,key:value}定义访问头,添加在Url规则头部,或尾部
 - 除去封面地址,其它地址都支持搜索地址的表达方式
-- 自定义js方法 java.ajax(url) java.base64Decoder()
+- 自定义js方法
+//获取网页内容,url支持搜索url规则
+java.ajax(url)
+//base64解码
+java.base64Decoder(string)
+//设置需解析的html代码String
+java.setContent(html)
+//输入规则获取文本列表List<String>
+java.getStringList(rule)
+//输入规则获取文本
+java.getString(rule)
+//获取节点列表AnalyzeCollection
+java.getElements(ruleStr)
+//AnalyzeCollection方法
+public int size()
+public boolean hasNext()
+//设置下一个解析内容AnalyzeRule在js内变量为java
+public void next(AnalyzeRule analyzeRule)
 ```
 - 原有的规则不变,见下方
 
