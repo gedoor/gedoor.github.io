@@ -24,13 +24,13 @@
 java.ajax(url)
 //base64解码
 java.base64Decoder(string)
-//设置需解析的html代码String
+//设置需解析的内容Object
 java.setContent(html)
-//输入规则获取文本列表List<String>
+//输入规则String获取文本列表List<String>
 java.getStringList(rule)
-//输入规则获取文本
+//输入规则String获取文本
 java.getString(rule)
-//获取节点列表List<Object>
+//输入规则获取节点列表List<Object>
 java.getElements(ruleStr)
 ```
 - 原有的规则不变,见下方
