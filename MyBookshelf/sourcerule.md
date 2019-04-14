@@ -1,6 +1,8 @@
 ## 第三方书源制作教程
 - https://www.hostfans.cn/make-course
 - https://www.52pojie.cn/thread-758541-1-1.html
+- [异次元图源规则说明](https://github.com/mabDc/cartoon-rule/blob/master/RuleSupport.md)
+
 
 # 从2.19.030815开始增加了新的规则写法
 ```
