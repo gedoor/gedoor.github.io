@@ -4,7 +4,7 @@
 - [异次元图源规则说明](https://github.com/mabDc/cartoon-rule/blob/master/RuleSupport.md)
 
 
-# 从2.19.030815开始增加了新的规则写法
+# 本书源规则保持更新,适用于最新版本
 ```
 - 支持jsoub select语法,以@css:开头,语法见http://www.open-open.com/jsoup/selector-syntax.htm
 - 支持XPath语法,采用的这个库https://github.com/zhegexiaohuozi/JsoupXpath, 语法兼容方面请看自己查看
@@ -35,14 +35,13 @@ java.getString(rule)
 //输入规则获取节点列表List<Object>
 java.getElements(ruleStr)
 ```
-- 原有的规则不变,见下方
 
-# 书源规则说明
+# 简单书源规则说明
 - 书源规则基于HTML标记,如class,id,tag等
 - 想要写规则先要打开网页源代码,在里面找到想要获取内容对应的标签,
 - Chrome可以在网页上右击点击检查可以方便的查看标签
 
-## 基本写法
+## 简单规则写法
 ```
 - @为分隔符,用来分隔获取规则
 - 每段规则可分为3段
@@ -198,7 +197,8 @@ index-searchPage+1 或 index-searchPage-1 或 index-searchPage}
 #### RuleBookContent 章节内容
 ```
 例:id.txtContent@textNodes
-- 如需获取AJAX动态内容前面加$
+- 如需获取动态内容前面加$采用webView访问网站,
+js语句将会放到webView里执行,每秒钟执行一次,直到返回值不为空
 例:$id.txtContent@textNodes
 通用规则: <js>result.match(/[\\w\\W]+(<div[\\w\\W]+?[\\u4E00-\\u9FA50，。]{50,}[\\w\\W]+?div>)/)[1]</js>//*
 原理: 匹配包含50个以上中文字符的div节点.
