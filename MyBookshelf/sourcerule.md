@@ -3,14 +3,15 @@
 - https://www.52pojie.cn/thread-758541-1-1.html
 - [异次元图源规则说明](https://github.com/mabDc/cartoon-rule/blob/master/RuleSupport.md)
 
+- jsoup语法测试 https://try.jsoup.org
+- JSonPath语法测试 http://jsonpath.herokuapp.com
 
 # 本书源规则保持更新,适用于最新版本
 ```
-- 支持jsoub select语法,以@css:开头,语法见http://www.open-open.com/jsoup/selector-syntax.htm
+- 支持jsoup select语法,以@css:开头,语法见http://www.open-open.com/jsoup/selector-syntax.htm
 - 支持XPath语法,采用的这个库https://github.com/zhegexiaohuozi/JsoupXpath, 语法兼容方面请看自己查看
 - 支持JSonPath语法,以@JSon:开头,语法见 https://blog.csdn.net/koflance/article/details/63262484
 - JsonPath获取字符支持此种写法xxx{$._id}yyy{$.chapter}zzz
-- JSonPath语法测试 http://jsonpath.herokuapp.com 写书源时可用
 - 支持用js处理结果,以<js>开头</js>结尾,结果变量为result,网址变量为bastPath,位置任意,按顺序执行
   如 @JSon:$.link<js>"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"</js>
   如 <js>result=result.replace(/[\\w\\W]*url:'(.*?)'[\\w\\W]*/,\"$1\");
