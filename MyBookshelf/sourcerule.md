@@ -17,7 +17,7 @@
   如 @JSon:$.link<js>"http://chapterup.zhuishushenqi.com/chapter/" + encodeURIComponent(result)"</js>
   如 <js>result=result.replace(/[\\w\\W]*url:'(.*?)'[\\w\\W]*/,\"$1\");
   java.ajax(result)</js>class.panel-body content-body content-ext.0@html
-- **注意** #替换规则在新语法下无法使用,新的语法用js处理结果,
+- ##替换内容##替换为,支持正则
 - 可以用@put:{key:rule, key:ruel}保存变量其它地方使用,key为变量名, rule为完整的规则
 - 可以用@get:{key}获取变量,key为变量名
 - 解析规则时会先@put变量,然后,@get变量,替换@get:{key}
