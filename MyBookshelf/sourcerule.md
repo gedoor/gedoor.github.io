@@ -97,7 +97,7 @@ index-searchPage+1 或 index-searchPage-1 或 index-searchPage}
 
 #### RuleSearchList 搜索列表
 ```
-例:class.list-group-item!0:%
+例:class.list-group-item!0:-1
 ```
 
 #### RuleSearchAuthor 搜索里的作者
