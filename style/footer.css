@@ -1,0 +1,99 @@
+.share * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+@media (min-width:800px) {
+    .layout-footer {
+        width: 920px
+    }
+}
+
+.layout-footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* .footer-bar {
+    margin: 50px auto;
+    padding-top: 40px;
+    border-top: 1px solid #ccc;
+    color: #222;
+    font-size: small;
+} */
+
+.share {
+    border-top: 1px solid #000;
+    margin: 30px auto 0;
+    padding: 0 25px;
+  }
+  @media only screen and (min-width: 920px) {
+    .share {
+      margin: 30px auto 0;
+      padding: 0 50px;
+      max-width: 920px;
+    }
+  }
+  .share__list {
+    list-style: none;
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .share__item {
+    margin: 15px 25px;
+    width: 28px;
+    height: 28px;
+  }
+  @media only screen and (min-width: 960px) {
+    .share__item {
+      margin: 50px 50px;
+      width: 56px;
+      height: 56px;
+      z-index: 10;
+    }
+  }
+  .share__trigger {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .share__item--github .share__trigger {
+    background-image: url("../svg/github.svg");
+    background-size: 17.5px 17.5px;
+  }
+  @media only screen and (min-width: 960px) {
+    .share__item--github .share__trigger {
+      background-size: 25px 25px;
+    }
+  }
+  .share__item--shop .share__trigger {
+    background-image: url("../svg/shopping.svg");
+    background-size: 17.5px 17.5px;
+  }
+  @media only screen and (min-width: 960px) {
+    .share__item--shop .share__trigger {
+      background-size: 25px 25px;
+    }
+  }
+  .share__item--discord .share__trigger {
+    background-image: url("../svg/discord.svg");
+    background-size: 17.5px 17.5px;
+  }
+  @media only screen and (min-width: 960px) {
+    .share__item--discord .share__trigger {
+      background-size: 25px 25px;
+    }
+  }

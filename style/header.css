@@ -1,0 +1,51 @@
+.layout-header {
+    background: whute;
+    font-family: Consolas,Courier,PingFang SC,PingFang TC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,Source Han Sans CN,Noto Sans SC,Source Han Sans TC,Noto Sans CJK TC,SimSun,monospace;
+}
+
+@media (min-width:800px) {
+    .layout-header {
+        width: 920px
+    }
+}
+
+
+.layout-header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-bar__list--menu {
+    float: left;
+}
+
+.header-bar {
+    margin: 20px auto 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.header-bar__list--menu {
+    float: left;
+    margin-top: 5px;
+}
+.header-bar__list--link {
+    float: right;
+    margin-top: 18px;
+}
+
+.header-bar__list--link .item {
+    display: inline-block;
+}
+
+.header-bar__list--link .item a {
+    color: #000;
+    text-decoration:none;
+}
