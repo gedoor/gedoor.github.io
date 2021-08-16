@@ -19,6 +19,37 @@
 .container h2 {
     clear: both;font-size: 1.8em; font-weight: bold; margin: 1em 0px 0.85em; /* margin-top: 0px; */ border-bottom-width: 1px; border-bottom-style: solid; padding-bottom: 8px; border-bottom-color: rgb(230, 230, 230);
 }
+/* 
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+} */
+
+.txt {
+    color: var(--md-primary-bg-color);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgArea {
+    padding-bottom: 1rem;
+    max-width: 24rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.txtArea {
+    max-width: fit-content;
+    flex: 300px;
+}
+
+.wrapper {
+    padding-right: 0.3rem;
+}
 
 h6 {
     clear: both;font-size: 1em; font-weight: bold; margin: 0.75em 0px 0.5em;color: rgb(119, 119, 119);
