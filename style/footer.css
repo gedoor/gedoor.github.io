@@ -102,7 +102,7 @@
     background-size: 17.5px 17.5px;
   }
   @media only screen and (min-width: 960px) {
-    .share__item--discord .share__trigger {
+    .share__item--bilibili .share__trigger {
       background-size: 25px 25px;
     }
   }
