@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+}
+
+#header {
+    border-top: solid 3px #568fcc;
+}
+
 .layout-header {
     background: whute;
     font-family: Consolas,Courier,PingFang SC,PingFang TC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,Source Han Sans CN,Noto Sans SC,Source Han Sans TC,Noto Sans CJK TC,SimSun,monospace;
@@ -5,10 +13,9 @@
 
 @media (min-width:800px) {
     .layout-header {
-        width: 920px
+        width: 920px;
     }
 }
-
 
 .layout-header {
     margin-left: auto;
@@ -19,6 +26,14 @@
 
 .header-bar__list--menu {
     float: left;
+}
+
+/* 取消h标签的默认css样式 */
+.h {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
 }
 
 .header-bar {
@@ -32,13 +47,17 @@
     content: "";
     clear: both;
 }
+
+/* logo */
 .header-bar__list--menu {
     float: left;
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
+
+/* 导航 */
 .header-bar__list--link {
     float: right;
-    margin-top: 18px;
+    margin-top: inherit;
 }
 
 .header-bar__list--link .item {

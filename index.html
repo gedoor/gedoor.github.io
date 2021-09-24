@@ -2,209 +2,35 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>开源阅读</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 适配小尺寸屏幕 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-touch-fullscreen" content="YES">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 传送基础 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- css样式 -->
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/container.css">
+    <link rel="stylesheet" href="style/legado.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/cdk.css">
 </head>
 
 <body>
-    <div class="layout-header">
-        <div class="container">
-            <div class="header-bar clearfix">
-                <div class="header-bar__list header-bar__list--menu">
-                    <div class="item item--logo">
-                        <a href="/index.html">
-                            <img src="/svg/logo.svg" alt="legado" width="50" height="50">
-                        </a>
-                    </div>
-                </div>
-                <div class="header-bar__list header-bar__list--link">
-                    <div class="item">
-                        <a href="/about.html">about</a>
-                    </div>
-                    <div class="item">
-                        /
-                        <a href="https://www.yuque.com/legado/wiki" target="_blank">wiki</a>
-                    </div>
-                    <!-- <div class="item">
-                        /
-                        <a href=""><del>源倉庫</del></a>
-                    </div> -->
-                    <div class="item">
-                        /
-                        <a href="/index.html">home</a>
-                    </div>
-                </div>
+    <!-- 坐标 -->
+    <div id="header"></div>
+    <div id="container"></div>
+    <!-- <div id="cdk"></div> -->
+    <div id="footer"></div>
 
-            </div>
-        </div>
-    </div>
-    <div class="layout-container">
-        <div class="container">
-            <div class="txt">
-                <div class="imgArea">
-                    <div class="wrapper">
-                        <img width="350" src="/images/app-web-legado.png" alt="产品示意图">
-                    </div>
-                </div>
-                <div class="txtArea">
-                    <h2>开源阅读
-                        <a href="https://github.com/gedoor/legado/releases" target="_blank">
-                            <img height="18px" style="margin-left: 4px;"
-                                src="https://img.shields.io/github/v/release/gedoor/legado.svg" alt="">
-                        </a>
-                    </h2>
-                    <p class="introduction">阅读是一款提供网络文学搜索的工具，为广大网络文学爱好者提供一种方便、快捷舒适的试读体验。<br></p>
-                    <p>新用户？</p>
-                    <ul>
-                        <li>软件不提供内容，需要您自己手动添加，例如导入书源等。</li>
-                        <li>看看 <a href="https://www.yuque.com/legado/wiki" target="_blank">官方帮助文档</a>，也许里面就有你要的答案。</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="download">
-                <h2>下载</h2>
-                <h6>阅读3.0：</h6>
-                <p>
-                    <a href="https://github.com/gedoor/legado" target="_blank">github</a>
-                    /
-                    <a href="https://play.google.com/store/apps/details?id=io.legado.play.release"
-                        target="_blank">Google play</a>
-                    /
-                    <a href="https://www.coolapk.com/apk/io.legado.app.release" target="_blank">酷安</a>
-                    /
-                    <a href="https://kunfei.lanzoui.com/b0f7pt4ja" target="_blank">蓝奏云</a>
-                    /
-                    <a href="https://www.90pan.com/wap.php?action=space&uid=0&folder_id=138704" target="_blank">90网盘</a>
-                </p>
-                <h6>阅读2.0：</h6>
-                <p>
-                    <a href="https://github.com/gedoor/MyBookshelf/releases/tag/2.21.010422" target="_blank">github</a>
-                    /
-                    <a href="https://www.90pan.com/wap.php?action=space&uid=0&folder_id=138703" target="_blank">90网盘</a>
-                </p>
-            </div>
-            <div>
-                <h2>联系</h2>
-                <blockquote>
-                    <p>如发现了缺陷或是希望增加什么功能，请先检查一下文档里是否已经提过，或是搜索一下已有的
-                        <a href="https://github.com/gedoor/legado/issues" target="_blank"> issue</a>
-                        <br>
-                        如果仍未解决，请提交一个
-                        <a href="https://github.com/gedoor/legado/issues" target="_blank"> issue</a>，便于问题的跟踪及解决。
-                    </p>
-                </blockquote>
-                <p>
-                    <a href="https://t.me/yueduguanfang" target="_blank">
-                        <img src="https://img.shields.io/badge/Telegram-%E7%BE%A4%E7%BB%84-blue" alt="">
-                    </a>
-                    <a href="https://t.me/legado_channels" target="_blank">
-                        <img src="https://img.shields.io/badge/Telegram-%E9%A2%91%E9%81%93-blue" alt="">
-                </p>
-                <p>
-                    <a href="https://t.me/yueduguanfang" target="_blank">
-                        <img src="https://img.shields.io/badge/Telegram-group-blue" alt="">
-                    </a>
-                    <a href="https://t.me/legado_channels" target="_blank">
-                        <img src="https://img.shields.io/badge/Telegram-channel-blue" alt="">
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="layout-footer">
-
-        <div class="share">
-            <section class="cdk">
-                <header class="cdk__header">
-                    <h2 class="cdk__title">兑换码</h2>
-                </header>
-                <div class="cdk__content">
-                    <ul class="cdk__list">
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <div class="cdk__item-date"></div>
-                                <div class="cdk__item-title">YXG0FNKMCEH9CY2LQ9GMFW5</div>
-                            </div>
-                        </li>
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <span class="cdk__item-date"></span>
-                                <span class="cdk__item-title">GYUQ3JUXTX8P6QJ0VXM6CML</span>
-                            </div>
-                        </li>
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <span class="cdk__item-date"></span>
-                                <span class="cdk__item-title">73NXJUZRU91YUV9ETM3D2M7</span>
-                            </div>
-                        </li>
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <span class="cdk__item-date"></span>
-                                <span class="cdk__item-title">KAGG1UCVKME27LD6WKH1P1N</span>
-                            </div>
-                        </li>
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <span class="cdk__item-date"></span>
-                                <span class="cdk__item-title">PRJYF7AWZM8SR1B3WL33XG6</span>
-                            </div>
-                        </li>
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <span class="cdk__item-date"></span>
-                                <span class="cdk__item-title">6S2S5BCX8N7N4XMF093053N</span>
-                            </div>
-                        </li>
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <span class="cdk__item-date"></span>
-                                <span class="cdk__item-title">YJYRH4B8KA4AND7KENNDMXY</span>
-                            </div>
-                        </li>
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <span class="cdk__item-date"></span>
-                                <span class="cdk__item-title">5UHAKKRNU6E1C5B99760J7C</span>
-                            </div>
-                        </li>
-                        <li class="cdk__item">
-                            <div class="cdk__trigger">
-                                <span class="cdk__item-date"></span>
-                                <span class="cdk__item-title">27SNKT4DKM2AGV4USQ9MH0C</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <footer class="cdk__footer"><a href="https://play.google.com/redeem">Power by Google Play</a></footer>
-            </section>
-        </div>
-
-        <div class="container">
-            <div class="footer-bar clearfix">
-                <div class="share">
-                    <ul class="share__list">
-                        <li class="share__item share__item--shop"><a class="share__trigger"
-                                href="http://legado.pro:100/" target="_blank">shop</a></li>
-                        <li class="share__item share__item--github"><a class="share__trigger"
-                                href="https://github.com/gedoor/legado" target="_blank">github</a></li>
-                        <li class="share__item share__item--discord"><a class="share__trigger"
-                                href="https://discord.gg/VtUfRyzRXn" target="_blank">discord</a></li>
-                        <li class="share__item share__item--bilibili"><a class="share__trigger"
-                                href="https://space.bilibili.com/434930065" target="_blank">bilibili</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- 传送 -->
+    <script>
+        $("#header").load("lib/header.html");
+        $("#container").load("lib/legado.html");
+        $("#footer").load("lib/footer.html");
+        /* $("#cdk").load("lib/cdk.html"); */
+    </script>
 </body>
 
 </html>
