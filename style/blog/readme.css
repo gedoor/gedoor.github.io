@@ -1,0 +1,133 @@
+.header-bar {
+    margin: 20px 0 0;
+}
+
+.blog-part {
+    /* padding: 0 20px; */
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 15px;
+    padding-right: 15px */
+}
+@media (min-width:800px) {
+    .blog-part {
+        width: 800px
+    }
+}
+
+.readme {
+    display: flex;
+    flex-direction: column;
+    /* 激活滚动条 */
+    max-height: 800px;
+}
+
+marquee {
+    font-size: 20px;
+    background-color: #121418;
+    color: #e9e6e4;
+    padding: 6px 0;
+    width: calc(100% + 44px);
+    margin-left: -20px;
+    flex-shrink: 0;
+}
+
+/* 滚动条 */
+.news {
+    overflow: auto;
+    height: calc(100% + 60px);
+}
+/* 隐藏滚动条样式 */
+::-webkit-scrollbar {
+    display: none;
+  }
+/* 相同标签中间加距离 */
+.news-container + .news-container {
+    margin-top: 40px;
+}
+/* 副标题 */
+.news-title-container {
+    display: flex;
+    align-items: center;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-bottom: 20px;
+    /* padding-bottom: 20px; */
+    margin-top: 30px;
+    letter-spacing: -1px;
+    
+}
+/* 文章副标题 */
+.news-title {
+    font-size: 25px;
+    clear: both;font-size: 1.8em; 
+    font-weight: bold; 
+    margin-top: 0px;
+    padding-bottom: 8px; 
+    /* font-family: "Playfair Display", serif; */
+}
+.title-date {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+/* 文章日期 */
+.date {
+    display: flex;
+    justify-content: flex-end;
+}
+/* 文章数序 */
+.news-page {
+    font-size: 1.4em;
+    margin-bottom: 16px;
+    /* font-family: "Space Grotesk", sans-serif; */
+}
+/* 文章标题 */
+.news-page-title {
+    /* font-family: "Space Grotesk", sans-serif; */
+    font-size: 1.8em;
+    font-weight: 600;
+    max-width: 16ch;
+    letter-spacing: -2px;
+}
+/* 文章内容 */
+.news-page-content {
+    max-width: 33ch;
+    font-size: 15px;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+/* 文章底部关于 */
+/* .about {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #121418;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #e9e6e4;
+    border-bottom: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+.about-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.about-content {
+    max-width: 30ch;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+.about-footer {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+} */
