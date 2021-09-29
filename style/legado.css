@@ -17,7 +17,7 @@
 }
 
 .container h2 {
-    clear: both;font-size: 1.8em; font-weight: bold; margin: 1em 0px 0.85em; /* margin-top: 0px; */ border-bottom-width: 1px; border-bottom-style: solid; padding-bottom: 8px; border-bottom-color: rgb(230, 230, 230);
+    clear: both;font-size: 1.8em; font-weight: bold; margin: 1em 0 0.85em; /* margin-top: 0px; */ border-bottom-width: 1px; border-bottom-style: solid; padding-bottom: 8px; border-bottom-color: rgb(230, 230, 230);
 }
 /* 
 img,
