@@ -6,4 +6,5 @@ Legado for Web
   
 阅读网站
   
+<a href="https://gedoor.github.io">gedoor.github.io</a> / <a href="https://www.legado.top/">legado.top</a>
 </div>
