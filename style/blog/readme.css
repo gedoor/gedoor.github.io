@@ -94,7 +94,7 @@ marquee {
 }
 /* 文章内容 */
 .news-page-content {
-    max-width: 33ch;
+    max-width: 100%;
     font-size: 15px;
     margin-top: 12px;
     line-height: 1.4;
