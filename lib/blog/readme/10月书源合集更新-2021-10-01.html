@@ -1,0 +1,10 @@
+<div class="title-date">
+    <div class="news-page">10月书源合集更新</div>
+    <div class="date">2021-10-01</div>
+</div>
+<div id="news-page-content" class="news-page-content"></div>
+<script>
+    $.get("./md/blog/10月书源合集更新-2021-10-01.md", function(response, status, xhr){
+        $("#news-page-content").html(marked(response));
+    });
+</script>
