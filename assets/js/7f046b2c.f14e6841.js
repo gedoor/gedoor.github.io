@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklegado_wiki=self.webpackChunklegado_wiki||[]).push([[695],{7945:function(o){o.exports=JSON.parse('{"allTagsPath":"/gedoor.github.io/blog/tags","name":"facebook","count":1,"permalink":"/gedoor.github.io/blog/tags/facebook"}')}}]);
