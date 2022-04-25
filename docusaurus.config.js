@@ -6,16 +6,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://github.com/gedoor/',
+  title: 'Legado',
+  tagline: '',
+  url: 'https://legado.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'gedoor', // Usually your GitHub org/user name.
   projectName: 'gedoor.github.io', // Usually your repo name.
-
+  
   presets: [
     [
       'classic',
