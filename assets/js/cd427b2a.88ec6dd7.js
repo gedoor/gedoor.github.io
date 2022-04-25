@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklegado_wiki=self.webpackChunklegado_wiki||[]).push([[364],{8340:function(o){o.exports=JSON.parse('{"allTagsPath":"/gedoor.github.io/blog/tags","name":"docusaurus","count":4,"permalink":"/gedoor.github.io/blog/tags/docusaurus"}')}}]);

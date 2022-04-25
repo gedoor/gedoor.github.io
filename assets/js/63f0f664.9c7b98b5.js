@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklegado_wiki=self.webpackChunklegado_wiki||[]).push([[75],{5838:function(e){e.exports=JSON.parse('{"allTagsPath":"/gedoor.github.io/blog/tags","name":"hello","count":2,"permalink":"/gedoor.github.io/blog/tags/hello"}')}}]);
