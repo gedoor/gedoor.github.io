@@ -2,46 +2,54 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 第一次使用 Legado ? 
 
-Let's discover **Docusaurus in less than 5 minutes**.
+:::tip  为什么第一次安装好之后什么东西都没有?
+阅读只是一个转码工具，不提供内容，第一次安装app，需要自己手动导入书源[^书源]。
+:::
 
-## Getting Started
+## 添加本地小说文件
+### 给予阅读本地文件夹访问权限
 
-Get started by **creating a new site**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+1.1 书架界面（也就是打开应用后的第一个界面）最右上角三个点 `⋮` 图标，然后点击`添加本地`。
 
-### What you'll need
+1.2 此时会弹出一个“选择文件夹”，我们使用“系统文件夹选择器”
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+1.3 请新建一个名为 `Read` 的文件夹，当然你也可以凭自己喜好命名。
 
-## Generate a new site
+1.4 选择 `Read` 文件夹，并点击“使用此文件夹”，系统会提示允许阅读访问 `Read` 中的文件吗，我们点击允许。
 
-Generate a new Docusaurus site using the **classic template**.
+### 添加小说到书架
 
-The classic template will automatically be added to your project after you run the command:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+2.1 首先你需要把小说文本文件存放在 `Read` 文件夹里。
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+2.2 在阅读添加本地的界面，勾选你要添加的小说。
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+2.3 最后点击右下方的“放入书架”，完成。
 
-## Start your site
+## 如何导入书源文件?
 
-Run the development server:
+:::tip
+一般书源分两种导入情况，本地文件和网络链接。
+书源格式后缀有 `txt、json` ，其中 `json` 文件某些情况下无法导入，需要修改后缀为`txt`格式才可导入
+:::
 
-```bash
-cd my-website
-npm run start
-```
+### 本地导入
+1. 添加书源文件到 `Read` 文件夹。
+(不知道这里的请看“给予阅读本地文件夹访问权限”)
+2. 导航栏“我的”界面，进入“书源管理”。
+3. 点击右上角三个点 `⋮` 的图标，选择 `本地导入` 。
+4. 在系统文件选择器里，点击你要添加的书源文件。
+5. 加载完成后，勾选书源或直接全选后确定，完成。
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+:::tip
+网路导入地址一般为:`https://域名/**.json`
+:::
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### 网络导入
+1. 导航栏 `我的` 界面，进入 `书源管理` 。
+2. 点击右上角三个点 `⋮` 的图标，选择 `网络导入` 。
+3. 粘贴书源网址后点击确定。
+4. 加载完成后，勾选书源或直接全选后确定，完成。
