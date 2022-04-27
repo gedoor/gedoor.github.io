@@ -17,16 +17,6 @@ const config = {
   projectName: 'gedoor.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
-  i18n: {
-    defaultLocale: "zh-Hans",
-    locales: ["zh-Hant", "zh-Hans", "en", "fr"],
-    localeConfigs: {
-      "zh-Hant": { label: "正體中文" },
-      "zh-Hans": { label: "简体中文" },
-      en: { label: "English" },
-      fr: { label: "Français" },
-    },
-  },
 
   presets: [
     [
