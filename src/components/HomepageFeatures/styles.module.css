@@ -5,7 +5,12 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureImg {
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-800);
+  padding: 0px;
+  height: 570px;
+  width: 270px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
