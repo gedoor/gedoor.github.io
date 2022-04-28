@@ -45,6 +45,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        // 自动隐藏置顶导航栏
+        hideOnScroll: true,
+        
         title: 'Legado',
         logo: {
           alt: 'My Site Logo',
@@ -54,15 +57,20 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: '文档',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          {to: '/blog', label: '博客', position: 'right'},
           {
             href: 'https://github.com/gedoor/gedoor.github.io',
             label: 'GitHub',
             position: 'right',
           },
+          // 翻译下拉框
+/*           {
+            type: 'localeDropdown',
+            position: 'right',
+          }, */
         ],
       },
       footer: {
@@ -110,6 +118,34 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      
+
+      // 公告栏
+      announcementBar: {
+        id: 'announcementBar-2',
+        content:
+          '此处为公告',
+          backgroundColor: '#fafbfc',
+          textColor: '#091E42',
+          isCloseable: true,
+      },
+
+      // i18n
+/*       i18n: {
+        defaultLocale: 'zh',
+        locales: ['zh', 'en'],
+        localeConfigs: {
+          zh: {
+            htmlLang: 'zh-CN',
+          },
+          // You can omit a locale (e.g. fr) if you don't need to override the defaults
+          en: {
+            direction: 'en-GB',
+          },
+        },
+      }, */
+      
+      
     }),
 };
 
