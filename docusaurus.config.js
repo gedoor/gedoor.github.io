@@ -124,7 +124,7 @@ const config = {
       announcementBar: {
         id: 'announcementBar-2',
         content:
-          '此处为公告',
+          '微信关注“开源阅读”公众号',
           backgroundColor: '#fafbfc',
           textColor: '#091E42',
           isCloseable: true,
