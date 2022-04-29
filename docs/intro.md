@@ -20,11 +20,16 @@ Google play 是对于我们的一种捐助渠道。
 
 ## 2.0
 
-:::caution
+:::caution 注意
 该版本不支持3.0版本书源
 :::
 
 * [Github - Releases](https://github.com/gedoor/MyBookshelf/releases/latest)
 
 # IOS - 苹果
+
+:::caution 注意
+此项目已停止
+:::
+
 * 搁置中（无发行版）
