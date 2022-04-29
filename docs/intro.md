@@ -11,10 +11,10 @@ sidebar_position: 1
 * [Github - Releases](https://github.com/gedoor/legado/releases/latest)
 * [Coolapk - 酷安](https://www.coolapk.com/apk/io.legado.app.release)
 * [Google play - $1.99](https://play.google.com/store/apps/details?id=io.legado.play.release)
-* [\#Beta](https://kunfei.lanzoui.com/b0f810h4b)
+* [Beta - 蓝奏云](https://kunfei.lanzoui.com/b0f810h4b)
 
 :::note 注意
-Google play 是一种捐助渠道。
+Google play 是对于我们的一种捐助渠道。
 :::
 
 # IOS - 苹果
