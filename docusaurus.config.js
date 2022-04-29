@@ -65,6 +65,7 @@ const config = {
             href: 'https://github.com/gedoor/gedoor.github.io',
             label: 'GitHub',
             position: 'right',
+            class: 'home_href'
           },
           // 翻译下拉框
 /*           {
