@@ -40,7 +40,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* 公告栏 */
+/* 公告栏样式 */
 div[class^="announcementBar_"] {
   --site-announcement-bar-stripe-color1: hsl(
     var(--site-primary-hue-saturation) 85%
