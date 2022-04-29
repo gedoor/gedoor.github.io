@@ -57,3 +57,33 @@ div[class^="announcementBar_"] {
   );
   font-weight: bold;
 }
+
+/* 设置文档图像风格 */
+.theme-doc-markdown img {
+  max-height: 300px;
+}
+
+/* 最大宽度为 996px 时 */
+@media (max-width: 996px) {
+  /* 标题文字 */
+  /* .navbar__title {
+      display: none;
+  } */
+  .navbar__link {
+    display: block;
+  }
+  .home_href {
+    display: none;
+  }
+}
+
+
+.navbar__items--right .toggle_node_modules-\@docusaurus-theme-classic-lib-next-theme-ColorModeToggle-styles-module {
+  width: 4rem;
+  height: 2rem;
+}
+
+/* 主页博客按键 */
+.button--info {
+  margin-left: 1.2rem;
+}
