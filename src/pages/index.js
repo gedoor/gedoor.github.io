@@ -19,6 +19,11 @@ function HomepageHeader() {
             to="/docs/intro">
             查看教程
           </Link>
+          <Link 
+            className="button button--lg button--info"
+            to="/blog">
+            博客
+          </Link>
         </div>
       </div>
     </header>
