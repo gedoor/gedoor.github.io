@@ -14,8 +14,7 @@ tags: [书源,漫画,订阅]
 5. 本书源适用于3.0版，2.0版阅读app应该大部分都能用，但不保证全部适用；
 6. 每次导入之前建议把之前的Namo分组删除全新导入！
 
-订阅/网络导入地址：
-[点击此处导入](legado://import/bookSource?src=https://namofree.gitee.io/yuedu3/legado3_booksource_by_Namo.json)
+**[点击此处导入](legado://import/bookSource?src=https://namofree.gitee.io/yuedu3/legado3_booksource_by_Namo.json)**
 
 ## 一程
 
@@ -25,7 +24,7 @@ tags: [书源,漫画,订阅]
 3. 【删除】：其他>版主+、笔趣阁（PC版）、搜小说、努努书坊、八一中文②、大众小说、爱看书吧①、免费搜书、追更小说、书本网、
 4. 移除漫画分类（漫画源以后放到订阅源里了）
 
-[点击此处导入](legado://import/bookSource?src=https://e-c.coding.net/p/yicheng/d/YD/git/raw/master/sy.json)
+**[点击此处导入](legado://import/bookSource?src=https://e-c.coding.net/p/yicheng/d/YD/git/raw/master/sy.json)**
 
 :::tip 提示
 建议删除旧书源后再导入。
@@ -38,7 +37,7 @@ tags: [书源,漫画,订阅]
 3. 【删除】：媒体>游戏大观
 4. 已将影视融合到资源
 
-订阅源合集｜网络导入：[点击此处导入](legado://import/bookSource?src=https://e-c.coding.net/p/yicheng/d/YD/git/raw/master/dy.json)
+**[点击此处导入](legado://import/rssSource?src=https://e-c.coding.net/p/yicheng/d/YD/git/raw/master/dy.json)**
 
 发布地址：https://gitee.com/i-c/yd/blob/sy/README.md
 
@@ -46,18 +45,18 @@ tags: [书源,漫画,订阅]
 
 ## 破冰
 
-3.0书源总合集网络：[点击此处导入](legado://import/bookSource?src=https://pbpobing.coding.net/p/yueduyuan/d/sy/git/raw/master/3.0shuyuan.json)
+3.0书源总合集网络：**[点击此处导入](legado://import/bookSource?src=https://pbpobing.coding.net/p/yueduyuan/d/sy/git/raw/master/3.0shuyuan.json)**
 
-3.0精选合集(偶尔更新)：[点击此处导入](legado://import/bookSource?src=https://pbpobing.coding.net/p/yueduyuan/d/sy/git/raw/master/50.json)
+3.0精选合集(偶尔更新)：**[点击此处导入](legado://import/bookSource?src=https://pbpobing.coding.net/p/yueduyuan/d/sy/git/raw/master/50.json)**
 
-3.0笔趣阁合集(偶尔更新)：[点击此处导入](legado://import/bookSource?src=https://pbpobing.coding.net/p/yueduyuan/d/sy/git/raw/master/bqg.json)
+3.0笔趣阁合集(偶尔更新)：**[点击此处导入](legado://import/bookSource?src=https://pbpobing.coding.net/p/yueduyuan/d/sy/git/raw/master/bqg.json)**
 
-有声源合集(没问题不更新)：[点击此处导入](legado://import/bookSource?src=https://pbpobing.coding.net/p/yueduyuan/d/sy/git/raw/master/3.0yousheng.json)
+有声源合集(没问题不更新)：**[点击此处导入](legado://import/bookSource?src=https://pbpobing.coding.net/p/yueduyuan/d/sy/git/raw/master/3.0yousheng.json)**
 
 ## 精选漫画源
 
-[点击此处导入](legado://import/bookSource?src=https://haxc.coding.net/p/booksrc/d/booksrc/git/raw/master/bookSource.json)
+**[点击此处导入](legado://import/bookSource?src=https://haxc.coding.net/p/booksrc/d/booksrc/git/raw/master/bookSource.json)**
 
 ## 关耳大佬的女频书源
 
-[点击此处导入](legado://import/bookSource?src=https://guaner001125.coding.net/p/coding-code-guide/d/booksources/git/raw/master/sources/guaner.json)
+**[点击此处导入](legado://import/bookSource?src=https://guaner001125.coding.net/p/coding-code-guide/d/booksources/git/raw/master/sources/guaner.json)**
