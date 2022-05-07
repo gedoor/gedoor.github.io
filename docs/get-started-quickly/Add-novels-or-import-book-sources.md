@@ -22,7 +22,7 @@ sidebar_position: 1
 3. 请新建一个名为 `Read` 的文件夹，当然您也可以凭自己喜好命名。
 4. 选择 `Read` 文件夹，并点击 `使用此文件夹` ，系统会提示允许阅读访问 `Read` 中的文件吗，我们点击允许。
 
-![给予专属文件夹权限.png](https://xxx.imgurl.ps/2022/04/29/82ab7ca290294.png)
+![zP4Zs.png](https://i.imgtg.com/2022/05/07/zP4Zs.png)
 
 ## 添加小说到书架
 
@@ -30,7 +30,7 @@ sidebar_position: 1
 2. 在阅读添加本地的界面，勾选您要添加的小说。
 3. 最后点击右下方的“放入书架”，完成。
 
-![添加本地书籍到书架.png](https://xxx.imgurl.ps/2022/05/05/1285fee570860.png)
+![zPtTB.png](https://i.imgtg.com/2022/05/07/zPtTB.png)
 
 ## 如何导入书源文件?
 
