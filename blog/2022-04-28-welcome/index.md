@@ -1,6 +1,6 @@
 ---
 slug: welcome
-title: Welcome
+title: 欢迎
 authors: heziyouyi
 tags: [hello, docusaurus]
 ---
@@ -30,7 +30,7 @@ tags: [hello, docusaurus]
 ```
 ---
 slug: welcome //网址的最后一部分（请使用英文）
-title: Welcome //标题
+title: 欢迎 //标题
 authors: heziyouyi //作者（作者信息在 authors.yml 修改或添加）
 tags: [hello, docusaurus] //标签
 ---
