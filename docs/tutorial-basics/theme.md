@@ -3,6 +3,10 @@ title: 主题
 sidebar_position: 2
 ---
 
+:::danger 施工中 🚧
+内容编写中
+:::
+
 ![zsYMP.png](https://i.imgtg.com/2022/05/10/zsYMP.png)
 
 :::caution 注意
@@ -25,7 +29,7 @@ sidebar_position: 2
 
 快速导入主色调、强调色、背景色、底部操作栏颜色。
 
-```jsx title="样例"
+```jsx title="导入代码样例"
 {
 "accentColor": "#ff3c3c3c",
 "backgroundColor": "#ffffffff",
@@ -81,3 +85,15 @@ sidebar_position: 2
 :::
 
 ## 启动页（Pro）
+
+> 位置：`我的` - `主题设置`
+
+:::caution 注意
+此功能为**pro**版专属，获取**pro**版请到**[安装页面](../download.md)**的Google play下载。
+:::
+
+1. 进入 `启动界面样式` 。
+
+2. 分别设置白天和夜间的背景图片,完成后开启 `自定义欢迎页` 以使用。
+
+![zVbcY.png](https://i.imgtg.com/2022/05/10/zVbcY.png)
