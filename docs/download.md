@@ -14,7 +14,7 @@ sidebar_position: 2
 * [Google play - $1.99](https://play.google.com/store/apps/details?id=io.legado.play.release)
 * [Beta - 蓝奏云](https://kunfei.lanzoui.com/b0f810h4b)
 
-:::note 注意
+:::note 笔记
 Google play 是对于我们的一种捐助渠道。
 :::
 
