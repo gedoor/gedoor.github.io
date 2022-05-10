@@ -29,7 +29,7 @@ sidebar_position: 1
 
 ### WebDav
 
-:::tip 支持WebDav的网盘有
+:::info 支持WebDav的网盘
 
 [坚果云](https://www.jianguoyun.com)、[Meow云](https://pan.miaogongzi.net/)
 
