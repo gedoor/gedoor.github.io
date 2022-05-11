@@ -78,8 +78,12 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '文档',
+            title: '官网',
             items: [
+              {
+                label: '博客',
+                to: '/blog',
+              },
               {
                 label: '使用教程',
                 to: '/docs/intro',
@@ -102,10 +106,6 @@ const config = {
           {
             title: '其他',
             items: [
-              {
-                label: '博客',
-                to: '/blog',
-              },
               {
                 label: 'GitHub Legado',
                 href: 'https://github.com/gedoor/legado',
