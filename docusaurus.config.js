@@ -107,8 +107,12 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'GitHub',
+                label: 'GitHub Legado',
                 href: 'https://github.com/gedoor/legado',
+              },
+              {
+                label: '隐私权政策',
+                href: '/PrivacyPolicyGenerator',
               },
             ],
           },
