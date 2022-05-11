@@ -107,12 +107,12 @@ const config = {
             title: '其他',
             items: [
               {
-                label: 'GitHub Legado',
-                href: 'https://github.com/gedoor/legado',
-              },
-              {
                 label: '隐私权政策',
                 href: '/PrivacyPolicyGenerator',
+              },
+              {
+                label: 'GitHub Legado',
+                href: 'https://github.com/gedoor/legado',
               },
             ],
           },
