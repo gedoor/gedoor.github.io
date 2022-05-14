@@ -4,10 +4,19 @@
         <title>开源阅读 Blog</title>
         <link>https://gedoor.github.io/blog</link>
         <description>开源阅读 Blog</description>
-        <lastBuildDate>Mon, 09 May 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 May 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[爆炸]]></title>
+            <link>https://gedoor.github.io/blog/explode</link>
+            <guid>explode</guid>
+            <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[周末了，聊两个最近比较爆炸的新闻。]]></description>
+            <content:encoded><![CDATA[<p>周末了，聊两个最近比较爆炸的新闻。</p><p>不知道大家关不关注比特币之类的加密货币，这两天国外的区块链发生了一件惊天动地的大事，有一个韩国团队做的项目叫UST，这是一个算法稳定币，1:1挂钩美元。怎么挂钩呢，它采用预言机，通过燃烧另一个叫做LUNA的虚拟币来铸造。</p><p>比如LUNA现在价格5美元，那么要铸造1美元的UST，就要燃烧0.2个LUNA。如果LUNA涨到10美元，那就燃烧0.1个。</p><p>在这个机制下，如果想买UST的人越多，就会燃烧越多的LUNA，从而推高LUNA的价格，这个大家都能理解吧。LUNA过去一年涨了几十倍。</p><p>而为了刺激大家来买UST，这个韩国团队就搞了个利息高达19.8%的存款项目，只要你存UST进去，就能获得这么高的利息。</p><p>但问题也来了，原本他们是想快速扩张然后把这个钱挣回来的，结果计划赶不上变化，实际操作起来非常难维持。所以最近他们开始下调利息，但没想到美联储一加息，加密货币都跌了，然后又有人大量抛售UST，最终导致崩盘了。</p><p>结果是什么呢？就是上个月5号曾经达到119.5美元的高点的加密货币LUNA币，仅仅过去了一个月时间价格就基本“归零”了，暴跌99.99%，同时有超过37万人爆仓。</p><p>其实估计多数人也看不懂这里面的逻辑，而我也只是道听途说。唯一想告诉大家的其实就一点，所谓的一夜暴富，其实是一将功成万骨枯。</p><hr><p>今天还有个爆炸消息，不过是个好消息。</p><p>就是知网要被反垄断调查了。说实话我之前一直以为知网是个公立的国家机构，没想到它的母公司居然还是个上市公司。</p><p>实在是难以理解。但对于天下学子来说真的是个好消息了，翟天临估计也要笑醒了。🤣</p><hr><p>最后说个事，最近我们的团购因为微信的限制，很多订阅了我们的人都没办法收到开团信息了，这个确实没啥好办法，只希望大家平时能多来公众号看看，次条会有推荐。</p><p>实际上我们最近开了很多非常不错的团，很多都是我们试用后非常认可的产品。</p><p>感兴趣的可以<strong><a href="https://www.legado.top/docs/donate" target="_blank" rel="noopener noreferrer">点击这里</a></strong>到我们的团购里去逛逛。阅读杂货铺已经名副其实了。🤭</p>]]></content:encoded>
+            <category>公众号</category>
+        </item>
         <item>
             <title><![CDATA[吃瓜]]></title>
             <link>https://gedoor.github.io/blog/eat-melon</link>
