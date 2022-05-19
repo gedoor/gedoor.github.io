@@ -117,8 +117,12 @@ const config = {
             title: '其他',
             items: [
               {
-                label: '隐私权政策',
+                label: '隐私政策',
                 href: '/PrivacyPolicyGenerator',
+              },
+              {
+                label: '免责声明',
+                href: '/Disclaimer',
               },
               {
                 label: 'GitHub Legado',
