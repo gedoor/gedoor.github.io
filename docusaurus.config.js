@@ -114,7 +114,7 @@ const config = {
             ],
           },
           {
-            title: '其他',
+            title: '条款',
             items: [
               {
                 label: '隐私政策',
@@ -123,10 +123,6 @@ const config = {
               {
                 label: '免责声明',
                 href: '/Disclaimer',
-              },
-              {
-                label: 'GitHub Legado',
-                href: 'https://github.com/gedoor/legado',
               },
             ],
           },
