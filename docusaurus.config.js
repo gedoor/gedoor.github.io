@@ -33,6 +33,16 @@ const config = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/gedoor/gedoor.github.io/tree/master/',
+          
+            // 博客侧边栏展示全部博文
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
+
+          // RSS
+          feedOptions: {
+              type: 'all',
+              copyright: `Copyright © ${new Date().getFullYear()} 开源阅读, Inc.`,
+            },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
