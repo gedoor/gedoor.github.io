@@ -13,6 +13,18 @@ sidebar_position: 9
 
 再就是也有不少人依然保持着质疑，但有更多的人愿意相信我们，并且给予了我们足够的支持，有不少大佬甚至已经参团200多次了，说实话真的很感动。
 
+### 支付宝红包二维码
+![zfbhbrwm](./donate/zfbhbrwm.png)
+
+### 支付宝收款二维码
+![zfbskrwm](./donate/zfbskrwm.jpg)
+
+### 微信赞赏二维码
+![wxzsrwm](./donate/wxskrwm.jpg)
+
+### qq收款二维码
+![qqskrwm](./donate/qqskrwm.jpg)
+
 ### 使用微信扫一扫订阅
 ![zQbci.jpg](https://i.imgtg.com/2022/05/10/zQbci.jpg)
 
