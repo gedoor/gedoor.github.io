@@ -5,25 +5,25 @@ sidebar_position: 9
 
 ### 支付宝红包二维码
 
-![zfbhbrwm.png](./donate/zfbhbrwm.png)
+![支付宝红包二维码](./donate/zfbhbrwm.png)
 
 ---------------------------------------
 
 ### 支付宝收款二维码
 
-![zfbskrwm.jpg](./donate/zfbskrwm.jpg)
+![支付宝收款二维码](./donate/zfbskrwm.jpg)
 
 ---------------------------------------
 
 ### 微信赞赏二维码
 
-![wxzsrwm.jpg](./donate/wxskrwm.jpg)
+![微信赞赏二维码](./donate/wxskrwm.jpg)
 
 ---------------------------------------
 
 ### qq收款二维码
 
-![qqskrwm.jpg](./donate/qqskrwm.jpg)
+![qq收款二维码](./donate/qqskrwm.jpg)
 
 ---------------------------------------
 
