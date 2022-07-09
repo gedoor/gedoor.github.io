@@ -1,5 +1,5 @@
 ---
-slug: book-source
+slug: book-source-2022-7
 title: 七月书源更新
 authors: [heziyouyi]
 tags: [书源,订阅]
