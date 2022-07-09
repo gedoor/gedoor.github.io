@@ -1,5 +1,5 @@
 ---
-slug: book-source
+slug: 2022-5-book-source
 title: 五月书源更新
 authors: [heziyouyi]
 tags: [书源,漫画,订阅]
