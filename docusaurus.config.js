@@ -98,6 +98,10 @@ const config = {
                 label: '使用教程',
                 to: '/docs/intro',
               },
+              {
+                label: '下载',
+                to: '/download',
+              },
             ],
           },
           {
