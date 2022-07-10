@@ -34,8 +34,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`阅读官网 ${siteConfig.title}`}
+      description="免费且开源的安卓小说阅读器。">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
