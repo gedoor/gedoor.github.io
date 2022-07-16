@@ -91,6 +91,10 @@ const config = {
             title: '官网',
             items: [
               {
+                label: '下载',
+                to: '/download',
+              },
+              {
                 label: '博客',
                 to: '/blog',
               },
@@ -99,8 +103,8 @@ const config = {
                 to: '/docs/intro',
               },
               {
-                label: '下载',
-                to: '/download',
+                label: '完本小说推荐',
+                to: '/endbook',
               },
             ],
           },
