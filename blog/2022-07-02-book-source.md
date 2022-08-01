@@ -5,6 +5,10 @@ authors: [heziyouyi]
 tags: [书源,订阅]
 ---
 
+:::tip 提示
+建议删除旧书源后再导入。
+:::
+
 ## namofree
 
 1. 修复失效书源，完善已有书源正文广告过滤规则；
@@ -22,6 +26,7 @@ https://namofree.coding.net/p/yuedu/d/legado/git/raw/master/legadoNamo.json
 ## 一程
 
 ### 书源
+
 1. 更新28个书源
 2. 新增22个书源
 3. 删除46个书源
@@ -32,10 +37,6 @@ https://namofree.coding.net/p/yuedu/d/legado/git/raw/master/legadoNamo.json
 ```
 https://e-c.coding.net/p/yicheng/d/YD/git/raw/master/sy.json
 ```
-
-:::tip 提示
-建议删除旧书源后再导入。
-:::
 
 ### 订阅
 
