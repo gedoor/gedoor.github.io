@@ -82,7 +82,7 @@ https://legado.pages.dev/08-dy-ftzlcb.txt
 
 ### 漫画
 
-**[点击此处导入](legado://import/rssSource?src=https://legado.pages.dev/mhy-haxc.txt)**
+**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/mhy-haxc.txt)**
 
 ```
 https://legado.pages.dev/mhy-haxc.txt
