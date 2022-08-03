@@ -2,7 +2,7 @@
 slug: book-source-2022-8
 title: 八月书源更新
 authors: [heziyouyi]
-tags: [书源,订阅]
+tags: [书源,订阅,漫画]
 ---
 
 :::tip 提示
@@ -17,10 +17,10 @@ tags: [书源,订阅]
 4. 友情提醒：订阅/导入地址有变更，有订阅的书友请自行替换；
 5. 每次导入之前建议把之前的Namo分组删除全新导入！
 
-**[点击此处导入](legado://import/bookSource?src=https://namofree.coding.net/p/yuedu/d/legado/git/raw/master/legadoNamo.json)**
+**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/08-sy-namofree.txt)**
 
 ```
-https://namofree.coding.net/p/yuedu/d/legado/git/raw/master/legadoNamo.json
+https://legado.pages.dev/08-sy-namofree.txt
 ```
 
 ## 一程
@@ -32,12 +32,58 @@ https://namofree.coding.net/p/yuedu/d/legado/git/raw/master/legadoNamo.json
 3. 删除35个书源
 4. 其它一些细节修改
 
+**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/08-sy-yc.json)**
+
+```
+https://legado.pages.dev/08-sy-yc.json
+```
+
 ### 订阅
 
 1. 更新10个网站
 2. 新增6个网站
 3. 删除5个网站
 
+**[点击此处导入](legado://import/rssSource?src=https://legado.pages.dev/08-dy-yc.json)**
+
 ```
-https://e-c.coding.net/p/yicheng/d/YD/git/raw/master/dy.json
+https://legado.pages.dev/08-dy-yc.json
+```
+
+## 破冰
+
+### 书源
+
+**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/08-sy-pb.txt)**
+
+```
+https://legado.pages.dev/08-sy-pb.txt
+```
+
+## 风停在了窗边
+
+### 书源
+
+**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/08-sy-ftzlcb.txt)**
+
+```
+https://legado.pages.dev/08-sy-ftzlcb.txt
+```
+
+### 订阅
+
+**[点击此处导入](legado://import/rssSource?src=https://legado.pages.dev/08-dy-ftzlcb.txt)**
+
+```
+https://legado.pages.dev/08-dy-ftzlcb.txt
+```
+
+## haxc
+
+### 漫画
+
+**[点击此处导入](legado://import/rssSource?src=https://legado.pages.dev/mhy-haxc.txt)**
+
+```
+https://legado.pages.dev/mhy-haxc.txt
 ```
