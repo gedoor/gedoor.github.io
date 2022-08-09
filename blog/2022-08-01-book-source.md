@@ -17,10 +17,10 @@ tags: [书源,订阅,漫画]
 4. 友情提醒：订阅/导入地址有变更，有订阅的书友请自行替换；
 5. 每次导入之前建议把之前的Namo分组删除全新导入！
 
-**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/08-sy-namofree.txt)**
+**[点击此处导入](legado://import/bookSource?src=https://legado.git.llc/08-sy-namofree.txt)**
 
 ```
-https://legado.pages.dev/08-sy-namofree.txt
+https://legado.git.llc/08-sy-namofree.txt
 ```
 
 ## 一程
@@ -32,10 +32,10 @@ https://legado.pages.dev/08-sy-namofree.txt
 3. 删除35个书源
 4. 其它一些细节修改
 
-**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/08-sy-yc.json)**
+**[点击此处导入](legado://import/bookSource?src=https://legado.git.llc/08-sy-yc.json)**
 
 ```
-https://legado.pages.dev/08-sy-yc.json
+https://legado.git.llc/08-sy-yc.json
 ```
 
 ### 订阅
@@ -44,46 +44,46 @@ https://legado.pages.dev/08-sy-yc.json
 2. 新增6个网站
 3. 删除5个网站
 
-**[点击此处导入](legado://import/rssSource?src=https://legado.pages.dev/08-dy-yc.json)**
+**[点击此处导入](legado://import/rssSource?src=https://legado.git.llc/08-dy-yc.json)**
 
 ```
-https://legado.pages.dev/08-dy-yc.json
+https://legado.git.llc/08-dy-yc.json
 ```
 
 ## 破冰
 
 ### 书源
 
-**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/08-sy-pb.txt)**
+**[点击此处导入](legado://import/bookSource?src=https://legado.git.llc/08-sy-pb.txt)**
 
 ```
-https://legado.pages.dev/08-sy-pb.txt
+https://legado.git.llc/08-sy-pb.txt
 ```
 
 ## 风停在了窗边
 
 ### 书源
 
-**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/08-sy-ftzlcb.txt)**
+**[点击此处导入](legado://import/bookSource?src=https://legado.git.llc/08-sy-ftzlcb.txt)**
 
 ```
-https://legado.pages.dev/08-sy-ftzlcb.txt
+https://legado.git.llc/08-sy-ftzlcb.txt
 ```
 
 ### 订阅
 
-**[点击此处导入](legado://import/rssSource?src=https://legado.pages.dev/08-dy-ftzlcb.txt)**
+**[点击此处导入](legado://import/rssSource?src=https://legado.git.llc/08-dy-ftzlcb.txt)**
 
 ```
-https://legado.pages.dev/08-dy-ftzlcb.txt
+https://legado.git.llc/08-dy-ftzlcb.txt
 ```
 
 ## haxc
 
 ### 漫画
 
-**[点击此处导入](legado://import/bookSource?src=https://legado.pages.dev/mhy-haxc.txt)**
+**[点击此处导入](legado://import/bookSource?src=https://legado.git.llc/mhy-haxc.txt)**
 
 ```
-https://legado.pages.dev/mhy-haxc.txt
+https://legado.git.llc/mhy-haxc.txt
 ```
