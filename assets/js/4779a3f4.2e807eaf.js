@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkheziyouyi=self.webpackChunkheziyouyi||[]).push([[5447],{7450:e=>{e.exports=JSON.parse('{"label":"\u8ba2\u9605","permalink":"/blog/tags/\u8ba2\u9605","allTagsPath":"/blog/tags","count":3}')}}]);
