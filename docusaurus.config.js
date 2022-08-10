@@ -7,16 +7,29 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '开源阅读',
-  tagline: '阅读是一款免费且开源的Android小说阅读器',
+  tagline: '阅读是一款可以自定义网络来源内容的阅读工具。',
   url: 'https://gedoor.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'gedoor', // Usually your GitHub org/user name.
   projectName: 'gedoor.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
+
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  // 
+  i18n: {
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
+  },
 
   presets: [
     [
@@ -26,23 +39,16 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/gedoor/gedoor.github.io/tree/master/',
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/gedoor/gedoor.github.io/tree/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/gedoor/gedoor.github.io/tree/master/',
-          
-            // 博客侧边栏展示全部博文
-          blogSidebarTitle: '全部博文',
-          blogSidebarCount: 'ALL',
-
-          // RSS
-          feedOptions: {
-              type: 'all',
-              copyright: `Copyright © ${new Date().getFullYear()} 开源阅读, Inc.`,
-            },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -54,33 +60,62 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      /* 色彩模式 */
+      /*  https://docusaurus.io/zh-CN/docs/api/themes/configuration#color-mode---dark-mode * */
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
+      /* 告示条  */
+      /* https://docusaurus.io/zh-CN/docs/api/themes/configuration#announcement-bar */
+      announcementBar: {
+        id: 'support_us',
+        content:
+          '⭐️ 如果你喜欢开源阅读，请关注 “开源阅读” 微信公众号',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
       navbar: {
-        // 自动隐藏置顶导航栏
-        hideOnScroll: true,
-        
-        title: 'Legado',
+        title: '开源阅读',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: '开源阅读',
+          src: 'img/logo.png',
+          href: "https://www.legado.top/",
+          target: "_self",
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
-            position: 'right',
+            position: 'left',
             label: '文档',
           },
-          {to: '/blog', label: '博客', position: 'right'},
+          {to: '/blog', label: '博客', position: 'left'},
           {
             href: 'https://github.com/gedoor/gedoor.github.io',
             label: 'GitHub',
             position: 'right',
-            class: 'home_href'
           },
-          // 翻译下拉框
-/*           {
+
+          /* 语言下拉选框 */
+          {
             type: 'localeDropdown',
             position: 'right',
+            /* dropdownItemsAfter: [
+              {
+                to: 'https://www.legado.com/help-us-translate',
+                label: '帮助我们翻译',
+              },
+            ], */
+          },
+
+          /* 按钮 */
+          /* {
+            type: 'html',
+            position: 'right',
+            value: '<button>提交反馈</button>',
           }, */
         ],
       },
@@ -141,34 +176,6 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      
-
-      // 公告栏
-      announcementBar: {
-        id: 'announcementBar-2',
-        content:
-          '⭐️ 如果你喜欢开源阅读，请关注 “开源阅读” 微信公众号',
-          backgroundColor: '#fafbfc',
-          textColor: '#091E42',
-          isCloseable: true,
-      },
-
-      // i18n
-/*       i18n: {
-        defaultLocale: 'zh',
-        locales: ['zh', 'en'],
-        localeConfigs: {
-          zh: {
-            htmlLang: 'zh-CN',
-          },
-          // You can omit a locale (e.g. fr) if you don't need to override the defaults
-          en: {
-            direction: 'en-GB',
-          },
-        },
-      }, */
-      
-      
     }),
 };
 

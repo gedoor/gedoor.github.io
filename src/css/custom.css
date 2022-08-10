@@ -8,7 +8,6 @@
 :root {
   --site-primary-hue-saturation: 167 68%;
   --site-primary-hue-saturation-light: 167 56%; /* do we really need this extra one? */
-  
   --ifm-color-primary: #3f51b5;
   --ifm-color-primary-dark: #3949a3;
   --ifm-color-primary-darker: #36459a;
@@ -27,18 +26,17 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+
+
+/* 主页博客按键 */
+.button--info {
+  margin-left: 1.2rem;
 }
 
-[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
-}
+
 
 /* 公告栏样式 */
 div[class^="announcementBar_"] {
@@ -58,32 +56,3 @@ div[class^="announcementBar_"] {
   font-weight: bold;
 }
 
-/* 设置文档图像风格 */
-.theme-doc-markdown img {
-  max-height: 300px;
-}
-
-/* 最大宽度为 996px 时 */
-@media (max-width: 996px) {
-  /* 标题文字 */
-  /* .navbar__title {
-      display: none;
-  } */
-  .navbar__link {
-    display: block;
-  }
-  .home_href {
-    display: none;
-  }
-}
-
-
-.navbar__items--right .toggle_node_modules-\@docusaurus-theme-classic-lib-next-theme-ColorModeToggle-styles-module {
-  width: 4rem;
-  height: 2rem;
-}
-
-/* 主页博客按键 */
-.button--info {
-  margin-left: 1.2rem;
-}
