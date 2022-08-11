@@ -1,3 +1,6 @@
+
+import Giscus from '@giscus/react';
+
 # Download - 下载
 
 :::info 提示
@@ -34,3 +37,21 @@ Google play 是对于我们的一种捐助渠道。
 :::
 
 * 已停止（无发行版）
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+  loading="lazy"
+/>
