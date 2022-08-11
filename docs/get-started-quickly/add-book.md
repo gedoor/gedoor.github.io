@@ -2,6 +2,8 @@
 title: 添加本地小说
 sidebar_position: 1
 ---
+import Giscus from '@giscus/react';
+
 # 添加本地小说或导入书源
 ## 第一次使用开源阅读? 
 
@@ -31,3 +33,21 @@ sidebar_position: 1
 3. 最后点击右下方的“放入书架”，完成。
 
 ![zPtTB.png](https://i.imgtg.com/2022/05/07/zPtTB.png)
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+  loading="lazy"
+/>

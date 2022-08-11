@@ -2,6 +2,7 @@
 title: 搜索一本书
 sidebar_position: 3
 ---
+import Giscus from '@giscus/react';
 
 # 搜索一本书
 
@@ -46,3 +47,21 @@ sidebar_position: 3
 ![zPPlg.png](https://i.imgtg.com/2022/05/07/zPPlg.png)
 
 3. 点击出现的书名按钮，按下右下角的 `阅读` 按钮去阅读！
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+  loading="lazy"
+/>

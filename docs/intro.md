@@ -2,6 +2,7 @@
 title: 介绍
 sidebar_position: 1
 ---
+import Giscus from '@giscus/react';
 
 # 主要功能
 
@@ -30,3 +31,21 @@ sidebar_position: 1
 # 我们的宗旨
 
 我们不立牌坊，一开始就是为了能够获得清爽简单无广告的阅读体验去的，所以这个宗旨绝对不会变。在能够维持我们的日常运营的情况下，绝对不会有多余的东西出现。
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+  loading="lazy"
+/>

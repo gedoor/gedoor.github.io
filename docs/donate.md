@@ -2,6 +2,7 @@
 title: 捐助
 sidebar_position: 9
 ---
+import Giscus from '@giscus/react';
 
 ### 支付宝红包二维码
 
@@ -48,3 +49,21 @@ sidebar_position: 9
 3. 任何售后问题都可以来找我们，绝对比淘宝靠谱；
 4. 店铺小二是十一，大家多耐心一点，有时候会比较忙，没法及时回复大家；
 5. 最后感谢所有下单支持我们的人，我们一定会继续加油！
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+  loading="lazy"
+/>

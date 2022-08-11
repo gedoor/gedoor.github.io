@@ -2,6 +2,7 @@
 title: 安装
 sidebar_position: 2
 ---
+import Giscus from '@giscus/react';
 
 :::info 提示
 阅读完全免费且无广告，如遇付款下载，请立即停止并使用本页提供的下载地址。
@@ -37,3 +38,21 @@ Google play 是对于我们的一种捐助渠道。
 :::
 
 * 已停止（无发行版）
+
+## 评论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+  loading="lazy"
+/>

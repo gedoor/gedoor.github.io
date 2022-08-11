@@ -2,6 +2,7 @@
 title: 导入书源
 sidebar_position: 2
 ---
+import Giscus from '@giscus/react';
 
 :::info 什么是书源
 简单理解就是书籍资源的网络来源。众所周知，网络上存在许许多多或收费或免费的读书网站。然而，这些网站往往存在广告繁多、排版字体欠佳，对手机优化很差等情况。书源就是通过特定的规则，在网络上抓取书籍章节和内容，并干净整齐的呈现在手机屏幕上，优化阅读体验。
@@ -30,3 +31,21 @@ sidebar_position: 2
 :::tip 提示
 网路导入地址一般为:`https://域名/**.json`
 :::
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+  loading="lazy"
+/>
