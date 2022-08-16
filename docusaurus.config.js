@@ -82,13 +82,13 @@ const config = {
         logo: {
           alt: '开源阅读',
           src: 'img/logo.png',
-          href: "https://www.legado.top/",
+          href: "/",
           target: "_self",
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'GettingStarted',
             position: 'left',
             label: '文档',
           },
@@ -103,12 +103,12 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'right',
-            /* dropdownItemsAfter: [
+            dropdownItemsAfter: [
               {
-                to: 'https://www.legado.com/help-us-translate',
+                to: 'https://github.com/gedoor/gedoor.github.io',
                 label: '帮助我们翻译',
               },
-            ], */
+            ],
           },
 
           /* 按钮 */
