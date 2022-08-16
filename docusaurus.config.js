@@ -92,7 +92,15 @@ const config = {
             position: 'left',
             label: '文档',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          {
+            to: '/blog', 
+            label: '博客', 
+            position: 'left'},
+            {
+              to: '/download', 
+              label: '下载',
+              position: 'left',
+            },
           {
             href: 'https://github.com/gedoor/gedoor.github.io',
             label: 'GitHub',
@@ -125,17 +133,17 @@ const config = {
           {
             title: '官网',
             items: [
-              {
-                label: '下载',
-                to: '/download',
-              },
-              {
+              /* {
                 label: '博客',
                 to: '/blog',
               },
               {
                 label: '使用教程',
                 to: '/docs/intro',
+              }, */
+              {
+                label: '简介',
+                to: '/intro',
               },
               {
                 label: '完本小说推荐',
