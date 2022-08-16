@@ -18,19 +18,19 @@
 ### 网站目录结构
 
 ```
-gedoor.github.io # 网站的根目录
-├──	blog	#博客
-│	├──	2022-08-01-book-source.md	#八月书源更新
-│	├──	authors.yaml	#作者信息
-│	└──	...
-├── docs	#文档
-│	├──	GettingStarted.md	#入门
+gedoor.github.io  #网站的根目录
+├──blog  #博客
+│   ├── 2022-08-01-book-source.md  #八月书源更新
+│   ├── authors.yaml  #作者信息
 │   └── ...
-├── src
-│   └── pages	#独立页面
-│		├──	download.md		#下载
+├──docs  #文档
+│   ├── GettingStarted.md  #入门
+│   └── ...
+├──src
+│   └──pages  #独立页面
+│       ├── download.md  #下载
 │       └── ...
-├── docusaurus.config.js	#网站配置
+├── docusaurus.config.js  #网站配置
 ├── ...
 ```
 
