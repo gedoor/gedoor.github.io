@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkheziyouyi=self.webpackChunkheziyouyi||[]).push([[6690],{2337:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/\u641c\u4e66","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
