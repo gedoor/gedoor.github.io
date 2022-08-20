@@ -49,6 +49,14 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/gedoor/gedoor.github.io/tree/master/',
+          // 侧边栏的标题展示所有
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
+          // 订阅源
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} 开源阅读, Inc. Built with Docusaurus.`,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

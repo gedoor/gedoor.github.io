@@ -1,10 +1,6 @@
+
 import Giscus from '@giscus/react';
 
-# 完本小说推荐
-
-## 2022
-
-- [第七十三期](/endbook/73)
 
 ## 讨论
 

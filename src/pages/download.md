@@ -53,5 +53,4 @@ Google play 是对于我们的一种捐助渠道。
   inputPosition="top"
   theme="preferred_color_scheme"
   lang="zh-CN"
-  loading="lazy"
 />
