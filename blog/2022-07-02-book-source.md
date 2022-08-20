@@ -4,6 +4,8 @@ title: 七月书源更新
 authors: [heziyouyi]
 tags: [书源,订阅]
 ---
+import Giscus from '@giscus/react';
+
 
 :::tip 提示
 建议删除旧书源后再导入。
@@ -53,3 +55,20 @@ https://e-c.coding.net/p/yicheng/d/YD/git/raw/master/dy.json
 ```
 
 发布地址：https://gitee.com/i-c/yd/blob/sy/README.md
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+/>

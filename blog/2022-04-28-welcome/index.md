@@ -4,6 +4,7 @@ title: 欢迎
 authors: heziyouyi
 tags: [hello, docusaurus]
 ---
+import Giscus from '@giscus/react';
 
 欢迎来到 开源阅读 博客
 
@@ -35,3 +36,20 @@ authors: heziyouyi //作者（作者信息在 authors.yml 修改或添加）
 tags: [hello, docusaurus] //标签
 ---
 ```
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+/>

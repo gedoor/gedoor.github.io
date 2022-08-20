@@ -4,6 +4,8 @@ title: 五月书源更新
 authors: [heziyouyi]
 tags: [书源,漫画,订阅]
 ---
+import Giscus from '@giscus/react';
+
 
 <!-- truncate -->
 
@@ -98,3 +100,20 @@ https://haxc.coding.net/p/booksrc/d/booksrc/git/raw/master/bookSource.json
 ```
 https://guaner001125.coding.net/p/coding-code-guide/d/booksources/git/raw/master/sources/guaner.json
 ```
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+/>

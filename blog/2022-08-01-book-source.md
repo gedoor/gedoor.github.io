@@ -4,6 +4,8 @@ title: 八月书源更新
 authors: [heziyouyi]
 tags: [书源,订阅,漫画]
 ---
+import Giscus from '@giscus/react';
+
 
 :::tip 提示
 建议删除旧书源后再导入。
@@ -89,3 +91,20 @@ https://legado.git.llc/08-dy-ftzlcb.txt
 ```
 https://legado.git.llc/mhy-haxc.txt
 ```
+
+## 讨论
+
+<Giscus
+  id="comments"
+  repo="gedoor/gedoor.github.io"
+  repoId="MDEwOlJlcG9zaXRvcnkxNjExMjczMjM"
+  category="General"
+  categoryId="DIC_kwDOCZqbm84CQvbE"
+  mapping="title"
+  term="Comments"
+  reactionsEnabled="1"
+  emitMetadata="0"
+  inputPosition="top"
+  theme="preferred_color_scheme"
+  lang="zh-CN"
+/>

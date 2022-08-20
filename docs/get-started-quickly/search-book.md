@@ -63,5 +63,4 @@ import Giscus from '@giscus/react';
   inputPosition="top"
   theme="preferred_color_scheme"
   lang="zh-CN"
-  loading="lazy"
 />

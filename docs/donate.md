@@ -79,5 +79,4 @@ import qqskrwm from './img/donate/qqskrwm.jpg'
   inputPosition="top"
   theme="preferred_color_scheme"
   lang="zh-CN"
-  loading="lazy"
 />
