@@ -71,9 +71,12 @@ const config = {
       /* 色彩模式 */
       /*  https://docusaurus.io/zh-CN/docs/api/themes/configuration#color-mode---dark-mode * */
       colorMode: {
+        // 首次访问网站时的色彩模式
         defaultMode: 'light',
+        // 在导航栏隐藏按钮
         disableSwitch: false,
-        respectPrefersColorScheme: false,
+        // 使用用户系统的首选项
+        respectPrefersColorScheme: true,
       },
       /* 告示条  */
       /* https://docusaurus.io/zh-CN/docs/api/themes/configuration#announcement-bar */
@@ -134,6 +137,9 @@ const config = {
             value: '<button>提交反馈</button>',
           }, */
         ],
+
+        // 自动隐藏顶部导航栏
+        hideOnScroll: true,
       },
       footer: {
         style: 'dark',
