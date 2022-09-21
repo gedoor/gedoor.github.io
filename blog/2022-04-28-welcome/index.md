@@ -12,6 +12,8 @@ import Giscus from '@giscus/react';
 
 网站博客文件在：https://github.com/gedoor/gedoor.github.io/tree/master/blog
 
+<!-- truncate -->
+
 您只需将 Markdown 文件（或文件夹）添加到 `blog` 目录。
 
 博客作者信息可以到 `authors.yml` 添加。
