@@ -4,11 +4,6 @@ sidebar_position: 1
 ---
 import Giscus from '@giscus/react';
 
-<!-- :::danger 施工中 🚧
-
-内容编写中
-
-::: -->
 
 ## 安装
 
