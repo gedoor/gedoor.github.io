@@ -15,7 +15,7 @@ import Giscus from '@giscus/react';
 ### 3.0
 * [Github - Releases](https://github.com/gedoor/legado/releases/latest)
 * [Coolapk - 酷安](https://www.coolapk.com/apk/io.legado.app.release)
-* [Google play - $1.99](https://play.google.com/store/apps/details?id=io.legado.play.release)
+* ~~[Google play - $1.99](https://play.google.com/store/apps/details?id=io.legado.play.release)~~ 已被下架
 * [Beta - 蓝奏云](https://kunfei.lanzoui.com/b0f810h4b)
 
 :::note 笔记
